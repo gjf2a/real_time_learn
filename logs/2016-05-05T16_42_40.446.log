@@ -1,0 +1,74 @@
+Starting up...
+Timestamp 946685028919
+Message received: STARTING
+Timestamp 946685037137
+Starting: clusters: 16, shrink: 1
+learning; STOP
+learning; STOP
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: LEARNING
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+Message received: LEARNING
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: LEARNING
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: LEARNING
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: LEARNING
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: QUIT
+quitting
+0.84 hz (55 cycles / 65698 ms)

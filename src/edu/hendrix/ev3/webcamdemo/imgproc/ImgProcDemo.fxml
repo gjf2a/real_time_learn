@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.hendrix.ev3.webcamdemo.imgproc.ImgProcDemoController">
+   <center>
+      <Canvas fx:id="display" height="200.0" width="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <VBox>
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Width" />
+                  <TextField fx:id="width" BorderPane.alignment="CENTER" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Height" />
+                  <TextField fx:id="height" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <VBox>
+         <children>
+            <HBox>
+               <children>
+                  <CheckBox fx:id="findFAST" mnemonicParsing="false" text="FAST" />
+                  <CheckBox fx:id="clusterFAST" mnemonicParsing="false" text="ClusterFAST" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Frame Rate" />
+                  <TextField fx:id="frameRate" BorderPane.alignment="CENTER" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Processing Time" />
+                  <TextField fx:id="procTime" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.hendrix.ev3.gui.topoview.TopoViewController">
+   <center>
+      <Canvas fx:id="image" height="200.0" width="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Node" />
+                  <ChoiceBox fx:id="nodeNum" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Moves" />
+                  <ChoiceBox fx:id="moves" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Successors" />
+                  <ChoiceBox fx:id="successors" prefHeight="26.0" prefWidth="140.0" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Transitions" />
+                  <TextField fx:id="transitions" prefHeight="26.0" prefWidth="145.0" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Button fx:id="jump" mnemonicParsing="false" onAction="#jump" text="Jump to Successor" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="open" mnemonicParsing="false" onAction="#open" text="Open" />
+              <MenuItem fx:id="close" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

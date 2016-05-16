@@ -1,0 +1,519 @@
+Timestamp 946686944050
+0.45 fps (1 frames / 2206 ms)
+0.73 fps (2 frames / 2757 ms)
+1.07 fps (3 frames / 2798 ms)
+1.41 fps (4 frames / 2840 ms)
+1.74 fps (5 frames / 2880 ms)
+2.05 fps (6 frames / 2922 ms)
+2.35 fps (7 frames / 2977 ms)
+2.65 fps (8 frames / 3019 ms)
+2.94 fps (9 frames / 3060 ms)
+3.23 fps (10 frames / 3100 ms)
+3.50 fps (11 frames / 3144 ms)
+3.75 fps (12 frames / 3201 ms)
+3.99 fps (13 frames / 3262 ms)
+4.24 fps (14 frames / 3302 ms)
+4.50 fps (15 frames / 3333 ms)
+4.74 fps (16 frames / 3373 ms)
+4.99 fps (17 frames / 3404 ms)
+5.20 fps (18 frames / 3464 ms)
+5.36 fps (19 frames / 3542 ms)
+5.51 fps (20 frames / 3628 ms)
+5.71 fps (21 frames / 3680 ms)
+5.91 fps (22 frames / 3724 ms)
+6.09 fps (23 frames / 3776 ms)
+6.28 fps (24 frames / 3821 ms)
+6.45 fps (25 frames / 3875 ms)
+6.62 fps (26 frames / 3926 ms)
+6.80 fps (27 frames / 3969 ms)
+6.98 fps (28 frames / 4010 ms)
+7.15 fps (29 frames / 4056 ms)
+7.32 fps (30 frames / 4096 ms)
+7.50 fps (31 frames / 4136 ms)
+7.66 fps (32 frames / 4175 ms)
+7.83 fps (33 frames / 4214 ms)
+7.99 fps (34 frames / 4255 ms)
+8.15 fps (35 frames / 4295 ms)
+8.30 fps (36 frames / 4335 ms)
+8.40 fps (37 frames / 4403 ms)
+8.47 fps (38 frames / 4486 ms)
+8.61 fps (39 frames / 4527 ms)
+8.76 fps (40 frames / 4568 ms)
+8.90 fps (41 frames / 4609 ms)
+9.03 fps (42 frames / 4650 ms)
+9.17 fps (43 frames / 4689 ms)
+9.28 fps (44 frames / 4739 ms)
+9.43 fps (45 frames / 4772 ms)
+9.52 fps (46 frames / 4832 ms)
+9.61 fps (47 frames / 4893 ms)
+9.65 fps (48 frames / 4975 ms)
+9.63 fps (49 frames / 5086 ms)
+9.68 fps (50 frames / 5167 ms)
+9.70 fps (51 frames / 5257 ms)
+9.72 fps (52 frames / 5349 ms)
+9.76 fps (53 frames / 5429 ms)
+9.77 fps (54 frames / 5529 ms)
+9.81 fps (55 frames / 5609 ms)
+9.83 fps (56 frames / 5699 ms)
+9.84 fps (57 frames / 5794 ms)
+Starting learner: Nodes: 100
+7.69 fps (58 frames / 7540 ms)
+7.80 fps (59 frames / 7565 ms)
+7.89 fps (60 frames / 7607 ms)
+7.96 fps (61 frames / 7663 ms)
+8.03 fps (62 frames / 7724 ms)
+8.07 fps (63 frames / 7809 ms)
+8.15 fps (64 frames / 7849 ms)
+8.24 fps (65 frames / 7892 ms)
+8.30 fps (66 frames / 7953 ms)
+8.34 fps (67 frames / 8037 ms)
+8.42 fps (68 frames / 8080 ms)
+8.50 fps (69 frames / 8113 ms)
+8.59 fps (70 frames / 8152 ms)
+8.66 fps (71 frames / 8200 ms)
+8.75 fps (72 frames / 8232 ms)
+8.81 fps (73 frames / 8282 ms)
+8.90 fps (74 frames / 8313 ms)
+8.96 fps (75 frames / 8366 ms)
+9.01 fps (76 frames / 8439 ms)
+9.07 fps (77 frames / 8491 ms)
+9.11 fps (78 frames / 8559 ms)
+9.16 fps (79 frames / 8624 ms)
+9.21 fps (80 frames / 8682 ms)
+9.27 fps (81 frames / 8734 ms)
+9.30 fps (82 frames / 8814 ms)
+9.34 fps (83 frames / 8884 ms)
+9.38 fps (84 frames / 8951 ms)
+9.44 fps (85 frames / 9009 ms)
+9.49 fps (86 frames / 9061 ms)
+9.55 fps (87 frames / 9113 ms)
+9.61 fps (88 frames / 9157 ms)
+9.68 fps (89 frames / 9195 ms)
+9.73 fps (90 frames / 9250 ms)
+9.77 fps (91 frames / 9316 ms)
+9.85 fps (92 frames / 9344 ms)
+9.91 fps (93 frames / 9383 ms)
+9.97 fps (94 frames / 9425 ms)
+10.04 fps (95 frames / 9464 ms)
+10.08 fps (96 frames / 9525 ms)
+10.11 fps (97 frames / 9593 ms)
+10.14 fps (98 frames / 9662 ms)
+10.18 fps (99 frames / 9729 ms)
+10.22 fps (100 frames / 9780 ms)
+10.24 fps (101 frames / 9859 ms)
+10.28 fps (102 frames / 9919 ms)
+10.33 fps (103 frames / 9972 ms)
+10.36 fps (104 frames / 10042 ms)
+10.40 fps (105 frames / 10093 ms)
+10.44 fps (106 frames / 10151 ms)
+10.47 fps (107 frames / 10217 ms)
+10.51 fps (108 frames / 10276 ms)
+10.55 fps (109 frames / 10328 ms)
+10.59 fps (110 frames / 10387 ms)
+10.64 fps (111 frames / 10433 ms)
+10.69 fps (112 frames / 10477 ms)
+10.73 fps (113 frames / 10533 ms)
+10.77 fps (114 frames / 10588 ms)
+Training: currentState: 1, currentMove: STOP
+LEFT:0.67200005;CENTER:0.42000002;RIGHT:0.869
+1 clusters
+10.09 fps (115 frames / 11394 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.66800004;CENTER:0.416;RIGHT:0.869
+2 clusters
+9.93 fps (116 frames / 11681 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.71800005;CENTER:0.38500002;RIGHT:0.384
+3 clusters
+9.89 fps (117 frames / 11831 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.87100005;CENTER:0.36100003;RIGHT:0.35700002
+4 clusters
+9.87 fps (118 frames / 11960 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.37;CENTER:0.35300002;RIGHT:0.321
+5 clusters
+9.81 fps (119 frames / 12125 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.595;CENTER:0.321;RIGHT:0.326
+6 clusters
+9.77 fps (120 frames / 12278 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.40800002;CENTER:0.326;RIGHT:0.326
+7 clusters
+9.74 fps (121 frames / 12420 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.35300002;CENTER:0.26700002;RIGHT:0.23700002
+8 clusters
+9.70 fps (122 frames / 12579 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.47900003;CENTER:0.22900002;RIGHT:0.209
+9 clusters
+9.65 fps (123 frames / 12752 ms)
+Training: currentState: 1, currentMove: SPIN_LEFT
+LEFT:0.321;CENTER:0.19500001;RIGHT:0.17500001
+10 clusters
+9.61 fps (124 frames / 12907 ms)
+Training: currentState: 1, currentMove: SPIN_LEFT
+LEFT:0.45200002;CENTER:0.19000001;RIGHT:0.156
+11 clusters
+9.53 fps (125 frames / 13110 ms)
+Training: currentState: 1, currentMove: SPIN_LEFT
+LEFT:0.45200002;CENTER:0.321;RIGHT:0.156
+12 clusters
+9.49 fps (126 frames / 13278 ms)
+Training: currentState: 1, currentMove: SPIN_LEFT
+LEFT:0.46;CENTER:0.321;RIGHT:0.149
+13 clusters
+9.43 fps (127 frames / 13463 ms)
+Training: currentState: 1, currentMove: SPIN_LEFT
+LEFT:0.404;CENTER:0.527;RIGHT:0.143
+14 clusters
+9.38 fps (128 frames / 13644 ms)
+Training: currentState: 1, currentMove: SPIN_LEFT
+LEFT:0.78000003;CENTER:0.68100005;RIGHT:0.14500001
+15 clusters
+9.32 fps (129 frames / 13834 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.86300004;CENTER:0.65800005;RIGHT:0.149
+16 clusters
+9.23 fps (130 frames / 14084 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.54;CENTER:0.437;RIGHT:0.13900001
+17 clusters
+9.19 fps (131 frames / 14247 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.50600004;CENTER:0.90700006;RIGHT:0.12100001
+18 clusters
+9.15 fps (132 frames / 14428 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.70600003;CENTER:0.34;RIGHT:0.109000005
+19 clusters
+9.11 fps (133 frames / 14602 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.365;CENTER:0.757;RIGHT:0.091000006
+20 clusters
+9.05 fps (134 frames / 14811 ms)
+Training: currentState: 1, currentMove: SPIN_LEFT
+LEFT:0.68;CENTER:0.61700004;RIGHT:0.07700001
+21 clusters
+8.90 fps (135 frames / 15167 ms)
+Training: currentState: 1, currentMove: SPIN_LEFT
+LEFT:0.38300002;CENTER:0.634;RIGHT:0.094000004
+22 clusters
+8.73 fps (136 frames / 15572 ms)
+Training: currentState: 1, currentMove: SPIN_LEFT
+LEFT:0.347;CENTER:0.321;RIGHT:0.326
+23 clusters
+8.67 fps (137 frames / 15803 ms)
+Training: currentState: 1, currentMove: SPIN_LEFT
+LEFT:0.84800005;CENTER:0.321;RIGHT:0.321
+24 clusters
+8.58 fps (138 frames / 16081 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.35500002;CENTER:0.328;RIGHT:0.34
+25 clusters
+8.52 fps (139 frames / 16308 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.633;CENTER:0.624;RIGHT:0.321
+26 clusters
+8.49 fps (140 frames / 16482 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.42800003;CENTER:0.73600006;RIGHT:0.666
+27 clusters
+8.44 fps (141 frames / 16705 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.38500002;CENTER:0.5;RIGHT:0.50600004
+28 clusters
+8.38 fps (142 frames / 16943 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:1.557;CENTER:0.42000002;RIGHT:0.321
+29 clusters
+8.29 fps (143 frames / 17250 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.326;CENTER:0.326;RIGHT:0.43300003
+30 clusters
+8.26 fps (144 frames / 17442 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.34;CENTER:0.326;RIGHT:0.40800002
+31 clusters
+8.24 fps (145 frames / 17605 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.5;CENTER:0.372;RIGHT:0.39100003
+32 clusters
+8.15 fps (146 frames / 17907 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.42000002;CENTER:0.321;RIGHT:0.36400002
+33 clusters
+8.10 fps (147 frames / 18152 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.38500002;CENTER:0.326;RIGHT:0.33800003
+34 clusters
+8.06 fps (148 frames / 18353 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.33800003;CENTER:0.321;RIGHT:0.347
+35 clusters
+8.06 fps (149 frames / 18495 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.823;CENTER:0.29000002;RIGHT:0.416
+36 clusters
+8.04 fps (150 frames / 18654 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:1.332;CENTER:0.39100003;RIGHT:0.38500002
+37 clusters
+8.02 fps (151 frames / 18825 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.446;CENTER:0.33800003;RIGHT:0.35700002
+38 clusters
+8.01 fps (152 frames / 18985 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.758;CENTER:0.298;RIGHT:0.33400002
+39 clusters
+7.97 fps (153 frames / 19197 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.64900005;CENTER:0.296;RIGHT:0.24300002
+40 clusters
+7.93 fps (154 frames / 19428 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:1.085;CENTER:0.257;RIGHT:0.23500001
+41 clusters
+7.88 fps (155 frames / 19663 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:1.074;CENTER:0.21100001;RIGHT:0.24100001
+42 clusters
+7.86 fps (156 frames / 19839 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:1.2060001;CENTER:0.19100001;RIGHT:0.18900001
+43 clusters
+7.86 fps (157 frames / 19972 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:1.016;CENTER:0.17500001;RIGHT:0.17400001
+44 clusters
+7.83 fps (158 frames / 20172 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:1.3260001;CENTER:0.179;RIGHT:0.18100001
+45 clusters
+7.79 fps (159 frames / 20402 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.326;CENTER:0.179;RIGHT:0.321
+46 clusters
+7.79 fps (160 frames / 20550 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.19100001;CENTER:0.18300001;RIGHT:0.32000002
+47 clusters
+7.78 fps (161 frames / 20692 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.321;CENTER:0.18900001;RIGHT:0.326
+48 clusters
+7.76 fps (162 frames / 20887 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.17;CENTER:0.209;RIGHT:0.26500002
+49 clusters
+7.72 fps (163 frames / 21115 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.143;CENTER:0.17400001;RIGHT:0.26900002
+50 clusters
+7.70 fps (164 frames / 21300 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.113000005;CENTER:0.16600001;RIGHT:0.27100003
+51 clusters
+7.70 fps (165 frames / 21433 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.11800001;CENTER:0.326;RIGHT:0.326
+52 clusters
+7.69 fps (166 frames / 21583 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.11800001;CENTER:0.326;RIGHT:0.294
+53 clusters
+7.67 fps (167 frames / 21767 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.12100001;CENTER:0.321;RIGHT:0.321
+54 clusters
+7.67 fps (168 frames / 21899 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.128;CENTER:0.32200003;RIGHT:0.455
+55 clusters
+7.65 fps (169 frames / 22079 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.326;CENTER:0.32200003;RIGHT:0.321
+56 clusters
+7.56 fps (170 frames / 22483 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.321;CENTER:0.32200003;RIGHT:0.326
+57 clusters
+7.52 fps (171 frames / 22754 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.149;CENTER:0.277;RIGHT:0.326
+58 clusters
+7.48 fps (172 frames / 22981 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.143;CENTER:0.23700002;RIGHT:0.416
+59 clusters
+7.45 fps (173 frames / 23218 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.22700001;CENTER:0.21700001;RIGHT:0.34
+60 clusters
+7.44 fps (174 frames / 23388 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.20500001;CENTER:0.15400001;RIGHT:0.34
+61 clusters
+7.45 fps (175 frames / 23499 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.185;CENTER:0.149;RIGHT:0.33
+62 clusters
+7.43 fps (176 frames / 23673 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.19800001;CENTER:0.17300001;RIGHT:0.33400002
+63 clusters
+7.43 fps (177 frames / 23833 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.18900001;CENTER:0.179;RIGHT:0.321
+64 clusters
+7.41 fps (178 frames / 24037 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.13700001;CENTER:0.18300001;RIGHT:0.279
+65 clusters
+7.39 fps (179 frames / 24227 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.12200001;CENTER:0.24100001;RIGHT:0.27100003
+66 clusters
+7.38 fps (180 frames / 24378 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.109000005;CENTER:0.29700002;RIGHT:0.27100003
+67 clusters
+7.38 fps (181 frames / 24529 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.046000004;CENTER:0.326;RIGHT:0.26700002
+68 clusters
+7.39 fps (182 frames / 24633 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.09900001;CENTER:0.439;RIGHT:0.27800003
+69 clusters
+7.40 fps (183 frames / 24734 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.095000006;CENTER:0.411;RIGHT:0.28100002
+70 clusters
+7.40 fps (184 frames / 24859 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.094000004;CENTER:0.40300003;RIGHT:0.289
+71 clusters
+7.41 fps (185 frames / 24972 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.091000006;CENTER:0.41000003;RIGHT:0.303
+72 clusters
+7.41 fps (186 frames / 25098 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.086;CENTER:0.509;RIGHT:0.326
+73 clusters
+7.42 fps (187 frames / 25191 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.091000006;CENTER:0.462;RIGHT:0.321
+74 clusters
+7.42 fps (188 frames / 25324 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.113000005;CENTER:0.416;RIGHT:0.59900004
+75 clusters
+7.43 fps (189 frames / 25446 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.185;CENTER:0.34500003;RIGHT:0.35700002
+76 clusters
+7.43 fps (190 frames / 25557 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.34;CENTER:0.32900003;RIGHT:0.326
+77 clusters
+7.44 fps (191 frames / 25665 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.321;CENTER:0.328;RIGHT:0.34800002
+78 clusters
+7.44 fps (192 frames / 25816 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.347;CENTER:0.328;RIGHT:Infinity
+79 clusters
+7.44 fps (193 frames / 25947 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.321;CENTER:0.32900003;RIGHT:1.5640001
+80 clusters
+7.43 fps (194 frames / 26098 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.321;CENTER:0.33400002;RIGHT:Infinity
+81 clusters
+7.44 fps (195 frames / 26212 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.286;CENTER:0.34;RIGHT:1.557
+82 clusters
+7.43 fps (196 frames / 26363 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.26700002;CENTER:0.321;RIGHT:1.5350001
+83 clusters
+7.44 fps (197 frames / 26487 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.24300002;CENTER:0.321;RIGHT:1.771
+84 clusters
+7.45 fps (198 frames / 26592 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.22500001;CENTER:0.321;RIGHT:1.825
+85 clusters
+7.45 fps (199 frames / 26702 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.20400001;CENTER:0.326;RIGHT:1.503
+86 clusters
+7.46 fps (200 frames / 26820 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.19000001;CENTER:0.321;RIGHT:Infinity
+87 clusters
+7.44 fps (201 frames / 27012 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.179;CENTER:0.748;RIGHT:1.6700001
+88 clusters
+7.44 fps (202 frames / 27164 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.179;CENTER:0.42000002;RIGHT:1.4360001
+89 clusters
+7.44 fps (203 frames / 27283 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.326;CENTER:0.439;RIGHT:1.4580001
+90 clusters
+7.44 fps (204 frames / 27412 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.26700002;CENTER:0.439;RIGHT:1.442
+91 clusters
+7.45 fps (205 frames / 27527 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.126;CENTER:0.439;RIGHT:1.4430001
+92 clusters
+7.45 fps (206 frames / 27657 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.113000005;CENTER:0.439;RIGHT:1.4430001
+93 clusters
+7.45 fps (207 frames / 27769 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.109000005;CENTER:Infinity;RIGHT:Infinity
+94 clusters
+7.46 fps (208 frames / 27895 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.112;CENTER:Infinity;RIGHT:1.848
+95 clusters
+7.45 fps (209 frames / 28071 ms)
+Training: currentState: 1, currentMove: SPIN_RIGHT
+LEFT:0.12100001;CENTER:Infinity;RIGHT:1.46
+96 clusters
+7.43 fps (210 frames / 28279 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.326;CENTER:1.9970001;RIGHT:1.6480001
+97 clusters
+7.41 fps (211 frames / 28478 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.321;CENTER:1.58;RIGHT:1.631
+98 clusters
+7.40 fps (212 frames / 28656 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.29700002;CENTER:Infinity;RIGHT:1.539
+99 clusters
+7.39 fps (213 frames / 28827 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.326;CENTER:Infinity;RIGHT:1.1470001
+100 clusters
+7.38 fps (214 frames / 29000 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.321;CENTER:1.687;RIGHT:1.6320001
+Saving 2016-02-02T15:37:56.145; 76572 chars

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.hendrix.ev3.remote.net.topological.autosonar.AutoSonarController">
+   <center>
+      <GridPane fx:id="constraints" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+   </center>
+   <bottom>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Nodes" />
+                  <TextField fx:id="nodes" />
+                  <Button fx:id="start" mnemonicParsing="false" onAction="#start" text="Start" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Exploration Constant" />
+                  <TextField fx:id="exploreConst" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Action at Goal" />
+                  <ChoiceBox fx:id="moveAtGoal" prefWidth="150.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <right>
+      <HBox>
+         <children>
+            <VBox fx:id="moves" BorderPane.alignment="CENTER" />
+            <VBox fx:id="overrides" />
+         </children>
+      </HBox>
+   </right>
+</BorderPane>

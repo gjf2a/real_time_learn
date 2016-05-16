@@ -1,0 +1,418 @@
+Starting up...
+Timestamp 946685391912
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+In mode WAITING and doing nothing
+Message received: STARTING
+Timestamp 946685405180
+Starting: clusters: 16, shrink: 2
+learning; STOP
+learning; STOP
+learning; STOP
+learning; STOP
+learning; STOP
+learning; STOP
+learning; STOP
+learning; STOP
+learning; STOP
+learning; STOP
+learning; STOP
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: LEARNING
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: LEARNING
+learning; LEFT
+learning; LEFT
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: LEARNING
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: LEARNING
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: LEARNING
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: LEARNING
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: LEARNING
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: LEARNING
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+learning; LEFT
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: LEARNING
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: LEARNING
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: LEARNING
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: LEARNING
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: LEARNING
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+learning; RIGHT
+Message received: LEARNING
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+learning; FORWARD
+Message received: QUIT
+quitting
+3.28 hz (311 cycles / 94890 ms)

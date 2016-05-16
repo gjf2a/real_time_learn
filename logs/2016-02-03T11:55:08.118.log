@@ -1,0 +1,802 @@
+Timestamp 946686336604
+0.46 fps (1 frames / 2191 ms)
+0.73 fps (2 frames / 2740 ms)
+1.08 fps (3 frames / 2782 ms)
+1.42 fps (4 frames / 2823 ms)
+1.73 fps (5 frames / 2888 ms)
+2.05 fps (6 frames / 2932 ms)
+2.35 fps (7 frames / 2973 ms)
+2.64 fps (8 frames / 3025 ms)
+2.94 fps (9 frames / 3066 ms)
+3.22 fps (10 frames / 3106 ms)
+3.49 fps (11 frames / 3149 ms)
+3.74 fps (12 frames / 3209 ms)
+3.98 fps (13 frames / 3266 ms)
+4.23 fps (14 frames / 3307 ms)
+4.48 fps (15 frames / 3348 ms)
+4.72 fps (16 frames / 3392 ms)
+4.94 fps (17 frames / 3444 ms)
+5.13 fps (18 frames / 3509 ms)
+5.33 fps (19 frames / 3568 ms)
+5.48 fps (20 frames / 3648 ms)
+5.69 fps (21 frames / 3692 ms)
+5.89 fps (22 frames / 3732 ms)
+6.10 fps (23 frames / 3773 ms)
+6.27 fps (24 frames / 3829 ms)
+6.43 fps (25 frames / 3891 ms)
+6.57 fps (26 frames / 3957 ms)
+6.76 fps (27 frames / 3997 ms)
+6.93 fps (28 frames / 4038 ms)
+7.08 fps (29 frames / 4095 ms)
+7.27 fps (30 frames / 4127 ms)
+7.44 fps (31 frames / 4168 ms)
+7.58 fps (32 frames / 4219 ms)
+7.75 fps (33 frames / 4259 ms)
+7.91 fps (34 frames / 4299 ms)
+8.06 fps (35 frames / 4340 ms)
+8.22 fps (36 frames / 4381 ms)
+8.30 fps (37 frames / 4458 ms)
+8.41 fps (38 frames / 4519 ms)
+8.52 fps (39 frames / 4579 ms)
+8.66 fps (40 frames / 4621 ms)
+8.79 fps (41 frames / 4663 ms)
+8.91 fps (42 frames / 4715 ms)
+9.04 fps (43 frames / 4755 ms)
+9.18 fps (44 frames / 4795 ms)
+9.32 fps (45 frames / 4830 ms)
+9.41 fps (46 frames / 4890 ms)
+9.43 fps (47 frames / 4985 ms)
+9.51 fps (48 frames / 5046 ms)
+9.60 fps (49 frames / 5106 ms)
+9.67 fps (50 frames / 5170 ms)
+9.75 fps (51 frames / 5230 ms)
+9.83 fps (52 frames / 5290 ms)
+9.91 fps (53 frames / 5350 ms)
+9.98 fps (54 frames / 5413 ms)
+10.01 fps (55 frames / 5497 ms)
+10.08 fps (56 frames / 5557 ms)
+10.14 fps (57 frames / 5619 ms)
+10.25 fps (58 frames / 5660 ms)
+10.35 fps (59 frames / 5703 ms)
+10.43 fps (60 frames / 5753 ms)
+10.50 fps (61 frames / 5809 ms)
+10.58 fps (62 frames / 5860 ms)
+10.67 fps (63 frames / 5903 ms)
+10.77 fps (64 frames / 5943 ms)
+10.85 fps (65 frames / 5992 ms)
+10.91 fps (66 frames / 6049 ms)
+10.96 fps (67 frames / 6111 ms)
+11.02 fps (68 frames / 6171 ms)
+11.09 fps (69 frames / 6220 ms)
+11.17 fps (70 frames / 6266 ms)
+11.26 fps (71 frames / 6305 ms)
+11.35 fps (72 frames / 6344 ms)
+11.44 fps (73 frames / 6383 ms)
+11.54 fps (74 frames / 6412 ms)
+11.59 fps (75 frames / 6470 ms)
+11.64 fps (76 frames / 6530 ms)
+11.43 fps (77 frames / 6734 ms)
+11.47 fps (78 frames / 6803 ms)
+11.46 fps (79 frames / 6892 ms)
+11.47 fps (80 frames / 6973 ms)
+11.45 fps (81 frames / 7073 ms)
+11.47 fps (82 frames / 7152 ms)
+11.49 fps (83 frames / 7222 ms)
+11.45 fps (84 frames / 7336 ms)
+11.46 fps (85 frames / 7419 ms)
+11.46 fps (86 frames / 7503 ms)
+11.42 fps (87 frames / 7618 ms)
+11.48 fps (88 frames / 7667 ms)
+11.55 fps (89 frames / 7706 ms)
+11.63 fps (90 frames / 7737 ms)
+11.70 fps (91 frames / 7780 ms)
+11.71 fps (92 frames / 7859 ms)
+11.76 fps (93 frames / 7910 ms)
+11.78 fps (94 frames / 7977 ms)
+11.81 fps (95 frames / 8045 ms)
+11.83 fps (96 frames / 8116 ms)
+11.88 fps (97 frames / 8167 ms)
+11.94 fps (98 frames / 8207 ms)
+11.98 fps (99 frames / 8261 ms)
+12.01 fps (100 frames / 8328 ms)
+12.06 fps (101 frames / 8377 ms)
+12.08 fps (102 frames / 8447 ms)
+12.11 fps (103 frames / 8506 ms)
+12.13 fps (104 frames / 8572 ms)
+12.15 fps (105 frames / 8642 ms)
+12.16 fps (106 frames / 8719 ms)
+12.19 fps (107 frames / 8777 ms)
+12.17 fps (108 frames / 8872 ms)
+12.21 fps (109 frames / 8929 ms)
+12.26 fps (110 frames / 8970 ms)
+12.32 fps (111 frames / 9009 ms)
+12.37 fps (112 frames / 9055 ms)
+12.43 fps (113 frames / 9093 ms)
+12.46 fps (114 frames / 9146 ms)
+12.52 fps (115 frames / 9185 ms)
+12.57 fps (116 frames / 9226 ms)
+12.58 fps (117 frames / 9304 ms)
+12.63 fps (118 frames / 9344 ms)
+12.70 fps (119 frames / 9373 ms)
+12.75 fps (120 frames / 9413 ms)
+12.79 fps (121 frames / 9461 ms)
+12.84 fps (122 frames / 9500 ms)
+12.90 fps (123 frames / 9538 ms)
+12.94 fps (124 frames / 9585 ms)
+12.96 fps (125 frames / 9645 ms)
+13.00 fps (126 frames / 9689 ms)
+13.06 fps (127 frames / 9727 ms)
+13.11 fps (128 frames / 9765 ms)
+13.16 fps (129 frames / 9806 ms)
+13.21 fps (130 frames / 9844 ms)
+13.25 fps (131 frames / 9884 ms)
+13.31 fps (132 frames / 9914 ms)
+13.36 fps (133 frames / 9958 ms)
+13.41 fps (134 frames / 9996 ms)
+13.45 fps (135 frames / 10037 ms)
+13.50 fps (136 frames / 10076 ms)
+13.53 fps (137 frames / 10124 ms)
+13.59 fps (138 frames / 10152 ms)
+13.64 fps (139 frames / 10190 ms)
+13.69 fps (140 frames / 10228 ms)
+13.72 fps (141 frames / 10276 ms)
+13.77 fps (142 frames / 10315 ms)
+13.83 fps (143 frames / 10342 ms)
+13.87 fps (144 frames / 10380 ms)
+13.90 fps (145 frames / 10429 ms)
+13.95 fps (146 frames / 10468 ms)
+13.99 fps (147 frames / 10508 ms)
+14.03 fps (148 frames / 10549 ms)
+14.07 fps (149 frames / 10587 ms)
+14.12 fps (150 frames / 10625 ms)
+14.15 fps (151 frames / 10672 ms)
+14.16 fps (152 frames / 10735 ms)
+14.22 fps (153 frames / 10763 ms)
+14.24 fps (154 frames / 10814 ms)
+14.30 fps (155 frames / 10841 ms)
+14.33 fps (156 frames / 10887 ms)
+14.38 fps (157 frames / 10917 ms)
+14.42 fps (158 frames / 10955 ms)
+14.47 fps (159 frames / 10987 ms)
+14.51 fps (160 frames / 11025 ms)
+14.55 fps (161 frames / 11066 ms)
+14.58 fps (162 frames / 11108 ms)
+14.59 fps (163 frames / 11174 ms)
+14.64 fps (164 frames / 11201 ms)
+14.66 fps (165 frames / 11255 ms)
+14.70 fps (166 frames / 11296 ms)
+14.75 fps (167 frames / 11323 ms)
+14.78 fps (168 frames / 11364 ms)
+14.83 fps (169 frames / 11399 ms)
+14.87 fps (170 frames / 11436 ms)
+14.90 fps (171 frames / 11473 ms)
+14.95 fps (172 frames / 11502 ms)
+14.99 fps (173 frames / 11539 ms)
+15.04 fps (174 frames / 11571 ms)
+15.08 fps (175 frames / 11608 ms)
+15.11 fps (176 frames / 11648 ms)
+15.15 fps (177 frames / 11685 ms)
+15.20 fps (178 frames / 11712 ms)
+15.24 fps (179 frames / 11749 ms)
+15.27 fps (180 frames / 11786 ms)
+15.32 fps (181 frames / 11813 ms)
+15.36 fps (182 frames / 11850 ms)
+15.39 fps (183 frames / 11891 ms)
+15.43 fps (184 frames / 11928 ms)
+15.46 fps (185 frames / 11966 ms)
+15.51 fps (186 frames / 11992 ms)
+15.51 fps (187 frames / 12056 ms)
+15.55 fps (188 frames / 12089 ms)
+15.58 fps (189 frames / 12130 ms)
+15.58 fps (190 frames / 12192 ms)
+15.59 fps (191 frames / 12250 ms)
+15.63 fps (192 frames / 12286 ms)
+15.66 fps (193 frames / 12324 ms)
+15.71 fps (194 frames / 12350 ms)
+15.75 fps (195 frames / 12383 ms)
+15.78 fps (196 frames / 12423 ms)
+15.81 fps (197 frames / 12460 ms)
+15.84 fps (198 frames / 12499 ms)
+15.85 fps (199 frames / 12554 ms)
+15.90 fps (200 frames / 12581 ms)
+15.93 fps (201 frames / 12618 ms)
+15.97 fps (202 frames / 12651 ms)
+16.00 fps (203 frames / 12691 ms)
+16.03 fps (204 frames / 12728 ms)
+16.06 fps (205 frames / 12765 ms)
+16.10 fps (206 frames / 12792 ms)
+16.14 fps (207 frames / 12829 ms)
+16.17 fps (208 frames / 12866 ms)
+16.17 fps (209 frames / 12928 ms)
+16.18 fps (210 frames / 12976 ms)
+16.20 fps (211 frames / 13024 ms)
+16.24 fps (212 frames / 13051 ms)
+16.27 fps (213 frames / 13088 ms)
+16.30 fps (214 frames / 13125 ms)
+16.32 fps (215 frames / 13170 ms)
+16.35 fps (216 frames / 13210 ms)
+16.37 fps (217 frames / 13260 ms)
+16.38 fps (218 frames / 13309 ms)
+16.38 fps (219 frames / 13367 ms)
+16.41 fps (220 frames / 13408 ms)
+16.43 fps (221 frames / 13455 ms)
+16.41 fps (222 frames / 13525 ms)
+16.44 fps (223 frames / 13562 ms)
+16.46 fps (224 frames / 13612 ms)
+16.48 fps (225 frames / 13656 ms)
+16.51 fps (226 frames / 13687 ms)
+16.54 fps (227 frames / 13725 ms)
+16.56 fps (228 frames / 13765 ms)
+16.60 fps (229 frames / 13792 ms)
+16.63 fps (230 frames / 13830 ms)
+16.66 fps (231 frames / 13866 ms)
+16.69 fps (232 frames / 13901 ms)
+16.72 fps (233 frames / 13937 ms)
+16.74 fps (234 frames / 13977 ms)
+16.77 fps (235 frames / 14014 ms)
+16.81 fps (236 frames / 14040 ms)
+16.84 fps (237 frames / 14076 ms)
+16.88 fps (238 frames / 14103 ms)
+16.70 fps (239 frames / 14314 ms)
+16.71 fps (240 frames / 14366 ms)
+16.63 fps (241 frames / 14492 ms)
+16.57 fps (242 frames / 14608 ms)
+16.56 fps (243 frames / 14672 ms)
+16.53 fps (244 frames / 14760 ms)
+16.47 fps (245 frames / 14879 ms)
+16.47 fps (246 frames / 14940 ms)
+16.49 fps (247 frames / 14976 ms)
+16.52 fps (248 frames / 15008 ms)
+16.55 fps (249 frames / 15048 ms)
+16.58 fps (250 frames / 15078 ms)
+16.58 fps (251 frames / 15138 ms)
+16.59 fps (252 frames / 15194 ms)
+16.61 fps (253 frames / 15229 ms)
+16.61 fps (254 frames / 15289 ms)
+16.61 fps (255 frames / 15356 ms)
+16.63 fps (256 frames / 15393 ms)
+16.63 fps (257 frames / 15452 ms)
+16.63 fps (258 frames / 15511 ms)
+16.64 fps (259 frames / 15568 ms)
+16.65 fps (260 frames / 15618 ms)
+16.67 fps (261 frames / 15654 ms)
+16.71 fps (262 frames / 15681 ms)
+16.73 fps (263 frames / 15717 ms)
+16.77 fps (264 frames / 15742 ms)
+16.77 fps (265 frames / 15802 ms)
+16.78 fps (266 frames / 15852 ms)
+16.80 fps (267 frames / 15889 ms)
+16.84 fps (268 frames / 15917 ms)
+16.87 fps (269 frames / 15942 ms)
+16.89 fps (270 frames / 15988 ms)
+16.91 fps (271 frames / 16024 ms)
+16.94 fps (272 frames / 16053 ms)
+16.97 fps (273 frames / 16089 ms)
+16.99 fps (274 frames / 16124 ms)
+17.03 fps (275 frames / 16150 ms)
+17.05 fps (276 frames / 16186 ms)
+17.09 fps (277 frames / 16211 ms)
+17.11 fps (278 frames / 16248 ms)
+17.14 fps (279 frames / 16277 ms)
+17.15 fps (280 frames / 16327 ms)
+17.17 fps (281 frames / 16362 ms)
+17.20 fps (282 frames / 16400 ms)
+17.22 fps (283 frames / 16436 ms)
+17.25 fps (284 frames / 16461 ms)
+17.27 fps (285 frames / 16498 ms)
+17.30 fps (286 frames / 16535 ms)
+17.32 fps (287 frames / 16574 ms)
+17.35 fps (288 frames / 16600 ms)
+17.37 fps (289 frames / 16636 ms)
+17.40 fps (290 frames / 16662 ms)
+17.42 fps (291 frames / 16709 ms)
+17.42 fps (292 frames / 16765 ms)
+17.44 fps (293 frames / 16801 ms)
+17.44 fps (294 frames / 16856 ms)
+17.46 fps (295 frames / 16892 ms)
+17.48 fps (296 frames / 16931 ms)
+17.50 fps (297 frames / 16967 ms)
+17.54 fps (298 frames / 16992 ms)
+17.57 fps (299 frames / 17019 ms)
+17.60 fps (300 frames / 17049 ms)
+17.60 fps (301 frames / 17106 ms)
+17.59 fps (302 frames / 17164 ms)
+17.63 fps (303 frames / 17191 ms)
+17.65 fps (304 frames / 17226 ms)
+17.68 fps (305 frames / 17251 ms)
+17.70 fps (306 frames / 17287 ms)
+17.72 fps (307 frames / 17324 ms)
+17.75 fps (308 frames / 17349 ms)
+17.78 fps (309 frames / 17377 ms)
+17.79 fps (310 frames / 17426 ms)
+17.82 fps (311 frames / 17451 ms)
+17.84 fps (312 frames / 17487 ms)
+17.87 fps (313 frames / 17512 ms)
+17.89 fps (314 frames / 17548 ms)
+17.92 fps (315 frames / 17583 ms)
+17.94 fps (316 frames / 17612 ms)
+17.96 fps (317 frames / 17647 ms)
+17.99 fps (318 frames / 17672 ms)
+18.00 fps (319 frames / 17719 ms)
+18.02 fps (320 frames / 17758 ms)
+17.98 fps (321 frames / 17857 ms)
+18.00 fps (322 frames / 17892 ms)
+18.01 fps (323 frames / 17932 ms)
+18.01 fps (324 frames / 17992 ms)
+18.01 fps (325 frames / 18048 ms)
+18.03 fps (326 frames / 18083 ms)
+18.03 fps (327 frames / 18138 ms)
+18.03 fps (328 frames / 18194 ms)
+18.05 fps (329 frames / 18229 ms)
+18.07 fps (330 frames / 18260 ms)
+18.04 fps (331 frames / 18348 ms)
+18.06 fps (332 frames / 18386 ms)
+lastCmd: Command:NEW_BSOC;Tag:1;Nodes:100;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-03T11:54:43.988
+Starting learner: Nodes: 100
+16.74 fps (333 frames / 19890 ms)
+16.76 fps (334 frames / 19926 ms)
+16.79 fps (335 frames / 19952 ms)
+16.81 fps (336 frames / 19988 ms)
+16.83 fps (337 frames / 20027 ms)
+16.86 fps (338 frames / 20052 ms)
+16.87 fps (339 frames / 20089 ms)
+16.89 fps (340 frames / 20125 ms)
+16.92 fps (341 frames / 20156 ms)
+16.95 fps (342 frames / 20181 ms)
+16.96 fps (343 frames / 20226 ms)
+16.98 fps (344 frames / 20261 ms)
+16.99 fps (345 frames / 20309 ms)
+17.01 fps (346 frames / 20344 ms)
+17.03 fps (347 frames / 20370 ms)
+17.05 fps (348 frames / 20406 ms)
+17.08 fps (349 frames / 20431 ms)
+17.10 fps (350 frames / 20470 ms)
+17.12 fps (351 frames / 20501 ms)
+17.13 fps (352 frames / 20543 ms)
+lastCmd: Command:FORWARD;Tag:2;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-03T11:54:46.850
+Training: currentState: 1, currentMove: STOP
+LEFT:0.804;CENTER:0.67;RIGHT:1.036
+state: 1 (1)
+16.60 fps (353 frames / 21262 ms)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:0.804;CENTER:0.614;RIGHT:1.0070001
+state: 2 (2)
+16.39 fps (354 frames / 21603 ms)
+Training: currentState: 2, currentMove: FORWARD
+LEFT:0.758;CENTER:0.62200004;RIGHT:2.5
+state: 3 (3)
+16.31 fps (355 frames / 21766 ms)
+Training: currentState: 3, currentMove: FORWARD
+LEFT:0.73;CENTER:0.483;RIGHT:0.578
+state: 4 (4)
+16.17 fps (356 frames / 22020 ms)
+Training: currentState: 4, currentMove: FORWARD
+LEFT:0.35300002;CENTER:0.39200002;RIGHT:0.578
+state: 5 (5)
+16.09 fps (357 frames / 22192 ms)
+Training: currentState: 5, currentMove: FORWARD
+LEFT:0.67;CENTER:0.45400003;RIGHT:0.38000003
+state: 6 (6)
+15.99 fps (358 frames / 22383 ms)
+Training: currentState: 6, currentMove: FORWARD
+LEFT:0.41200003;CENTER:0.418;RIGHT:0.381
+state: 7 (7)
+15.87 fps (359 frames / 22617 ms)
+Training: currentState: 7, currentMove: FORWARD
+LEFT:0.60300004;CENTER:0.38000003;RIGHT:0.35700002
+state: 8 (8)
+15.77 fps (360 frames / 22834 ms)
+Training: currentState: 8, currentMove: FORWARD
+LEFT:0.563;CENTER:0.328;RIGHT:0.33
+state: 9 (9)
+15.67 fps (361 frames / 23035 ms)
+Training: currentState: 9, currentMove: FORWARD
+LEFT:0.321;CENTER:0.28;RIGHT:0.298
+state: 10 (10)
+15.63 fps (362 frames / 23163 ms)
+Training: currentState: 10, currentMove: FORWARD
+LEFT:0.321;CENTER:0.24100001;RIGHT:0.26700002
+state: 11 (11)
+15.56 fps (363 frames / 23334 ms)
+lastCmd: Command:LEFT;Tag:3;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-03T11:54:49.615
+Training: currentState: 11, currentMove: FORWARD
+LEFT:0.33800003;CENTER:0.26500002;RIGHT:0.22900002
+state: 12 (12)
+15.47 fps (364 frames / 23532 ms)
+Training: currentState: 12, currentMove: SPIN_LEFT
+LEFT:0.45400003;CENTER:0.126;RIGHT:0.19000001
+state: 13 (13)
+15.41 fps (365 frames / 23681 ms)
+Training: currentState: 13, currentMove: SPIN_LEFT
+LEFT:0.45600003;CENTER:0.326;RIGHT:0.185
+state: 14 (14)
+15.36 fps (366 frames / 23832 ms)
+Training: currentState: 14, currentMove: SPIN_LEFT
+LEFT:0.748;CENTER:0.326;RIGHT:0.179
+state: 15 (15)
+15.28 fps (367 frames / 24015 ms)
+Training: currentState: 15, currentMove: SPIN_LEFT
+LEFT:0.74200004;CENTER:0.321;RIGHT:0.17
+state: 16 (16)
+15.20 fps (368 frames / 24205 ms)
+Training: currentState: 16, currentMove: SPIN_LEFT
+LEFT:0.551;CENTER:0.326;RIGHT:0.17
+state: 17 (17)
+15.13 fps (369 frames / 24392 ms)
+Training: currentState: 17, currentMove: SPIN_LEFT
+LEFT:0.757;CENTER:0.326;RIGHT:0.17
+state: 18 (18)
+15.07 fps (370 frames / 24552 ms)
+Training: currentState: 18, currentMove: SPIN_LEFT
+LEFT:0.78700006;CENTER:0.347;RIGHT:0.179
+state: 19 (19)
+15.00 fps (371 frames / 24732 ms)
+Training: currentState: 19, currentMove: SPIN_LEFT
+LEFT:0.80200005;CENTER:1.0500001;RIGHT:0.18300001
+state: 20 (20)
+14.94 fps (372 frames / 24907 ms)
+lastCmd: Command:FORWARD;Tag:4;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-03T11:54:51.223
+Training: currentState: 20, currentMove: SPIN_LEFT
+LEFT:0.818;CENTER:0.81200004;RIGHT:0.19000001
+state: 21 (21)
+14.85 fps (373 frames / 25110 ms)
+Training: currentState: 21, currentMove: FORWARD
+LEFT:0.90900004;CENTER:0.66;RIGHT:0.209
+state: 22 (22)
+14.78 fps (374 frames / 25300 ms)
+Training: currentState: 22, currentMove: FORWARD
+LEFT:0.68500006;CENTER:0.772;RIGHT:0.35700002
+state: 23 (23)
+14.71 fps (375 frames / 25492 ms)
+Training: currentState: 23, currentMove: FORWARD
+LEFT:0.87900007;CENTER:1.4900001;RIGHT:0.326
+state: 24 (24)
+14.61 fps (376 frames / 25740 ms)
+Training: currentState: 24, currentMove: FORWARD
+LEFT:1.58;CENTER:0.712;RIGHT:0.35300002
+state: 25 (25)
+14.50 fps (377 frames / 26000 ms)
+Training: currentState: 25, currentMove: FORWARD
+LEFT:0.77400005;CENTER:0.66800004;RIGHT:0.30400002
+state: 26 (26)
+14.40 fps (378 frames / 26241 ms)
+Training: currentState: 26, currentMove: FORWARD
+LEFT:0.748;CENTER:0.326;RIGHT:0.27800003
+state: 27 (27)
+14.34 fps (379 frames / 26432 ms)
+lastCmd: Command:RIGHT;Tag:5;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-03T11:54:52.719
+Training: currentState: 27, currentMove: FORWARD
+LEFT:0.744;CENTER:0.578;RIGHT:0.26700002
+state: 28 (28)
+14.22 fps (380 frames / 26724 ms)
+Training: currentState: 28, currentMove: SPIN_RIGHT
+LEFT:0.66200006;CENTER:0.10700001;RIGHT:0.22000001
+state: 29 (29)
+14.13 fps (381 frames / 26961 ms)
+Training: currentState: 29, currentMove: SPIN_RIGHT
+LEFT:0.52500004;CENTER:0.24700001;RIGHT:0.23300001
+state: 30 (30)
+14.05 fps (382 frames / 27189 ms)
+Training: currentState: 30, currentMove: SPIN_RIGHT
+LEFT:0.633;CENTER:0.536;RIGHT:0.22000001
+state: 31 (31)
+13.98 fps (383 frames / 27399 ms)
+Training: currentState: 31, currentMove: SPIN_RIGHT
+LEFT:0.614;CENTER:0.321;RIGHT:0.22500001
+state: 32 (32)
+13.91 fps (384 frames / 27615 ms)
+Training: currentState: 32, currentMove: SPIN_RIGHT
+LEFT:0.372;CENTER:0.296;RIGHT:0.143
+state: 33 (33)
+13.83 fps (385 frames / 27834 ms)
+Training: currentState: 33, currentMove: SPIN_RIGHT
+LEFT:0.532;CENTER:0.27800003;RIGHT:0.13000001
+state: 34 (34)
+13.78 fps (386 frames / 28002 ms)
+Training: currentState: 34, currentMove: SPIN_RIGHT
+LEFT:0.416;CENTER:0.26700002;RIGHT:0.135
+state: 35 (35)
+13.75 fps (387 frames / 28149 ms)
+Training: currentState: 35, currentMove: SPIN_RIGHT
+LEFT:0.483;CENTER:0.26700002;RIGHT:0.135
+state: 36 (36)
+13.67 fps (388 frames / 28386 ms)
+lastCmd: Command:FORWARD;Tag:6;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-03T11:54:54.527
+Training: currentState: 36, currentMove: SPIN_RIGHT
+LEFT:0.263;CENTER:0.26700002;RIGHT:0.149
+state: 37 (37)
+13.60 fps (389 frames / 28610 ms)
+Training: currentState: 37, currentMove: FORWARD
+LEFT:0.23300001;CENTER:0.279;RIGHT:0.17400001
+state: 38 (38)
+13.51 fps (390 frames / 28857 ms)
+Training: currentState: 38, currentMove: FORWARD
+LEFT:0.19900002;CENTER:0.162;RIGHT:0.149
+state: 39 (39)
+13.39 fps (391 frames / 29195 ms)
+Training: currentState: 39, currentMove: FORWARD
+LEFT:0.158;CENTER:0.21700001;RIGHT:0.067
+state: 40 (40)
+13.33 fps (392 frames / 29404 ms)
+Training: currentState: 40, currentMove: FORWARD
+LEFT:0.11800001;CENTER:0.21700001;RIGHT:0.040000003
+state: 41 (41)
+13.28 fps (393 frames / 29591 ms)
+lastCmd: Command:BACKWARD;Tag:7;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-03T11:54:55.751
+Training: currentState: 41, currentMove: FORWARD
+LEFT:0.078;CENTER:0.149;RIGHT:0.031000001
+state: 42 (42)
+13.18 fps (394 frames / 29887 ms)
+Training: currentState: 42, currentMove: BACKWARD
+LEFT:2.5;CENTER:0.13700001;RIGHT:1.223
+state: 43 (43)
+13.13 fps (395 frames / 30085 ms)
+lastCmd: Command:BACKWARD;Tag:8;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-03T11:54:56.359
+Training: currentState: 43, currentMove: BACKWARD
+LEFT:0.055000003;CENTER:0.17;RIGHT:1.2060001
+state: 44 (44)
+13.03 fps (396 frames / 30399 ms)
+Training: currentState: 44, currentMove: BACKWARD
+LEFT:1.131;CENTER:2.5;RIGHT:1.274
+state: 45 (45)
+12.95 fps (397 frames / 30651 ms)
+Training: currentState: 45, currentMove: BACKWARD
+LEFT:1.3870001;CENTER:2.5;RIGHT:1.246
+state: 46 (46)
+12.86 fps (398 frames / 30960 ms)
+Training: currentState: 46, currentMove: BACKWARD
+LEFT:0.07700001;CENTER:2.5;RIGHT:0.057000004
+state: 47 (47)
+12.80 fps (399 frames / 31161 ms)
+Training: currentState: 47, currentMove: BACKWARD
+LEFT:0.086;CENTER:2.5;RIGHT:0.093
+state: 48 (48)
+12.77 fps (400 frames / 31335 ms)
+Training: currentState: 48, currentMove: BACKWARD
+LEFT:0.091000006;CENTER:2.5;RIGHT:0.093
+state: 49 (49)
+12.73 fps (401 frames / 31510 ms)
+Training: currentState: 49, currentMove: BACKWARD
+LEFT:0.094000004;CENTER:2.5;RIGHT:1.4380001
+state: 50 (50)
+12.66 fps (402 frames / 31755 ms)
+Training: currentState: 50, currentMove: BACKWARD
+LEFT:0.10300001;CENTER:2.5;RIGHT:0.113000005
+state: 51 (51)
+12.61 fps (403 frames / 31971 ms)
+Training: currentState: 51, currentMove: BACKWARD
+LEFT:0.113000005;CENTER:2.5;RIGHT:0.113000005
+state: 52 (52)
+12.57 fps (404 frames / 32138 ms)
+Training: currentState: 52, currentMove: BACKWARD
+LEFT:0.120000005;CENTER:2.5;RIGHT:0.11800001
+state: 53 (53)
+12.53 fps (405 frames / 32312 ms)
+lastCmd: Command:RIGHT;Tag:9;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-03T11:54:58.623
+Training: currentState: 53, currentMove: BACKWARD
+LEFT:0.126;CENTER:2.5;RIGHT:0.135
+state: 54 (54)
+12.50 fps (406 frames / 32474 ms)
+Training: currentState: 54, currentMove: SPIN_RIGHT
+LEFT:0.13000001;CENTER:2.5;RIGHT:0.143
+state: 55 (55)
+12.46 fps (407 frames / 32654 ms)
+Training: currentState: 55, currentMove: SPIN_RIGHT
+LEFT:0.13000001;CENTER:0.257;RIGHT:0.14500001
+state: 56 (56)
+12.43 fps (408 frames / 32825 ms)
+Training: currentState: 56, currentMove: SPIN_RIGHT
+LEFT:0.12100001;CENTER:0.257;RIGHT:0.19900002
+state: 57 (57)
+12.38 fps (409 frames / 33041 ms)
+Training: currentState: 57, currentMove: SPIN_RIGHT
+LEFT:0.13000001;CENTER:0.257;RIGHT:0.326
+state: 58 (58)
+12.34 fps (410 frames / 33233 ms)
+Training: currentState: 58, currentMove: SPIN_RIGHT
+LEFT:0.13900001;CENTER:0.19800001;RIGHT:1.0020001
+state: 59 (59)
+12.29 fps (411 frames / 33431 ms)
+Training: currentState: 59, currentMove: SPIN_RIGHT
+LEFT:0.147;CENTER:0.19900002;RIGHT:1.3130001
+state: 60 (60)
+12.26 fps (412 frames / 33606 ms)
+Training: currentState: 60, currentMove: SPIN_RIGHT
+LEFT:0.147;CENTER:0.19500001;RIGHT:1.9850001
+state: 61 (61)
+12.25 fps (413 frames / 33710 ms)
+Training: currentState: 61, currentMove: SPIN_RIGHT
+LEFT:0.21200001;CENTER:0.321;RIGHT:2.5
+state: 62 (62)
+12.25 fps (414 frames / 33801 ms)
+Training: currentState: 62, currentMove: SPIN_RIGHT
+LEFT:0.21900001;CENTER:0.321;RIGHT:2.5
+state: 63 (63)
+12.24 fps (415 frames / 33905 ms)
+Training: currentState: 63, currentMove: SPIN_RIGHT
+LEFT:0.21900001;CENTER:0.321;RIGHT:1.1110001
+state: 64 (64)
+12.23 fps (416 frames / 34024 ms)
+Training: currentState: 64, currentMove: SPIN_RIGHT
+LEFT:0.086;CENTER:0.321;RIGHT:1.102
+state: 65 (65)
+12.22 fps (417 frames / 34128 ms)
+Training: currentState: 65, currentMove: SPIN_RIGHT
+LEFT:0.067;CENTER:0.321;RIGHT:1.0990001
+state: 66 (66)
+12.21 fps (418 frames / 34236 ms)
+Training: currentState: 66, currentMove: SPIN_RIGHT
+LEFT:0.067;CENTER:0.321;RIGHT:1.0840001
+state: 67 (67)
+12.20 fps (419 frames / 34351 ms)
+Training: currentState: 67, currentMove: SPIN_RIGHT
+LEFT:1.0300001;CENTER:0.24300002;RIGHT:1.088
+state: 68 (68)
+12.19 fps (420 frames / 34460 ms)
+Training: currentState: 68, currentMove: SPIN_RIGHT
+LEFT:2.237;CENTER:0.326;RIGHT:1.154
+state: 69 (69)
+12.18 fps (421 frames / 34569 ms)
+Training: currentState: 69, currentMove: SPIN_RIGHT
+LEFT:2.237;CENTER:0.326;RIGHT:0.994
+state: 70 (70)
+12.17 fps (422 frames / 34684 ms)
+Training: currentState: 70, currentMove: SPIN_RIGHT
+LEFT:0.49100003;CENTER:0.321;RIGHT:1.014
+state: 71 (71)
+12.14 fps (423 frames / 34847 ms)
+lastCmd: Command:FORWARD;Tag:10;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-03T11:55:01.127
+Training: currentState: 71, currentMove: SPIN_RIGHT
+LEFT:2.5;CENTER:1.9340001;RIGHT:1.1370001
+state: 72 (72)
+12.11 fps (424 frames / 35010 ms)
+Training: currentState: 72, currentMove: FORWARD
+LEFT:2.5;CENTER:2.5;RIGHT:1.046
+state: 73 (73)
+12.10 fps (425 frames / 35120 ms)
+Training: currentState: 73, currentMove: FORWARD
+LEFT:1.3950001;CENTER:1.3490001;RIGHT:1.052
+state: 74 (74)
+12.10 fps (426 frames / 35220 ms)
+Training: currentState: 74, currentMove: FORWARD
+LEFT:0.33200002;CENTER:2.5;RIGHT:1.1520001
+state: 75 (75)
+12.09 fps (427 frames / 35333 ms)
+Training: currentState: 75, currentMove: FORWARD
+LEFT:1.3970001;CENTER:1.4000001;RIGHT:1.0320001
+state: 76 (76)
+12.07 fps (428 frames / 35455 ms)
+Training: currentState: 76, currentMove: FORWARD
+LEFT:1.264;CENTER:1.4200001;RIGHT:1.105
+state: 77 (77)
+12.07 fps (429 frames / 35556 ms)
+Training: currentState: 77, currentMove: FORWARD
+LEFT:0.326;CENTER:1.274;RIGHT:1.0890001
+state: 78 (78)
+12.05 fps (430 frames / 35679 ms)
+Training: currentState: 78, currentMove: FORWARD
+LEFT:0.94200003;CENTER:2.5;RIGHT:0.994
+state: 79 (79)
+12.04 fps (431 frames / 35783 ms)
+Training: currentState: 79, currentMove: FORWARD
+LEFT:1.3360001;CENTER:1.263;RIGHT:0.96800005
+state: 80 (80)
+12.04 fps (432 frames / 35895 ms)
+Training: currentState: 80, currentMove: FORWARD
+LEFT:1.325;CENTER:1.166;RIGHT:0.97
+state: 81 (81)
+12.03 fps (433 frames / 36006 ms)
+Training: currentState: 81, currentMove: FORWARD
+LEFT:1.567;CENTER:1.539;RIGHT:0.94900006
+state: 82 (82)
+12.00 fps (434 frames / 36158 ms)
+Training: currentState: 82, currentMove: FORWARD
+LEFT:1.0580001;CENTER:2.5;RIGHT:0.92100006
+state: 83 (83)
+11.97 fps (435 frames / 36344 ms)
+Training: currentState: 83, currentMove: FORWARD
+LEFT:1.9210001;CENTER:0.97200006;RIGHT:0.95500004
+state: 84 (84)
+11.95 fps (436 frames / 36495 ms)
+Training: currentState: 84, currentMove: FORWARD
+LEFT:0.786;CENTER:0.947;RIGHT:0.83400005
+state: 85 (85)
+11.92 fps (437 frames / 36649 ms)
+Training: currentState: 85, currentMove: FORWARD
+LEFT:0.76400006;CENTER:1.3000001;RIGHT:0.78800005
+state: 86 (86)
+11.89 fps (438 frames / 36835 ms)
+Training: currentState: 86, currentMove: FORWARD
+LEFT:0.77300006;CENTER:0.915;RIGHT:0.75600004
+state: 87 (87)
+11.87 fps (439 frames / 36989 ms)
+Training: currentState: 87, currentMove: FORWARD
+LEFT:0.75600004;CENTER:0.71400005;RIGHT:0.75000006
+state: 88 (88)
+11.85 fps (440 frames / 37141 ms)
+Training: currentState: 88, currentMove: FORWARD
+LEFT:2.5;CENTER:0.666;RIGHT:0.78800005
+state: 89 (89)
+11.82 fps (441 frames / 37315 ms)
+Training: currentState: 89, currentMove: FORWARD
+LEFT:1.2010001;CENTER:1.246;RIGHT:0.77800006
+state: 90 (90)
+11.80 fps (442 frames / 37467 ms)
+Training: currentState: 90, currentMove: FORWARD
+LEFT:2.5;CENTER:0.90200007;RIGHT:0.758
+state: 91 (91)
+11.78 fps (443 frames / 37598 ms)
+Training: currentState: 91, currentMove: FORWARD
+LEFT:1.218;CENTER:0.93900007;RIGHT:0.744
+state: 92 (92)
+11.76 fps (444 frames / 37749 ms)
+Training: currentState: 92, currentMove: FORWARD
+LEFT:0.90200007;CENTER:0.947;RIGHT:0.721
+state: 93 (93)
+11.74 fps (445 frames / 37902 ms)
+Training: currentState: 93, currentMove: FORWARD
+LEFT:2.5;CENTER:2.5;RIGHT:0.69600004
+state: 94 (94)
+11.72 fps (446 frames / 38052 ms)
+Training: currentState: 94, currentMove: FORWARD
+LEFT:0.943;CENTER:0.883;RIGHT:0.66
+state: 95 (95)
+11.69 fps (447 frames / 38239 ms)
+Training: currentState: 95, currentMove: FORWARD
+LEFT:0.96300006;CENTER:2.5;RIGHT:0.634
+state: 96 (96)
+11.67 fps (448 frames / 38393 ms)
+Training: currentState: 96, currentMove: FORWARD
+LEFT:0.99000007;CENTER:0.823;RIGHT:0.66
+state: 97 (97)
+11.64 fps (449 frames / 38566 ms)
+Training: currentState: 97, currentMove: FORWARD
+LEFT:0.651;CENTER:0.78800005;RIGHT:0.588
+state: 98 (98)
+11.62 fps (450 frames / 38710 ms)
+Training: currentState: 98, currentMove: FORWARD
+LEFT:0.67200005;CENTER:0.757;RIGHT:0.523
+state: 99 (99)
+11.61 fps (451 frames / 38861 ms)
+Training: currentState: 99, currentMove: FORWARD
+LEFT:0.67200005;CENTER:0.757;RIGHT:0.492
+state: 100 (100)
+11.59 fps (452 frames / 39012 ms)
+lastCmd: Command:RIGHT;Tag:11;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-03T11:55:05.439
+Training: currentState: 100, currentMove: FORWARD
+LEFT:2.5;CENTER:0.698;RIGHT:0.46400002
+state: 101 (101)
+10.52 fps (453 frames / 43079 ms)
+lastCmd: Command:RIGHT;Tag:12;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-03T11:55:06.287
+Training: currentState: 101, currentMove: SPIN_RIGHT
+LEFT:1.5170001;CENTER:2.5;RIGHT:0.326
+state: 103 (103)
+9.77 fps (454 frames / 46475 ms)
+lastCmd: Command:RIGHT;Tag:13;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-03T11:55:06.478
+Training: currentState: 103, currentMove: SPIN_RIGHT
+LEFT:0.065000005;CENTER:0.39900002;RIGHT:0.35300002
+state: 105 (105)
+9.25 fps (455 frames / 49192 ms)
+lastCmd: Command:RIGHT;Tag:14;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-03T11:55:06.662
+Training: currentState: 105, currentMove: SPIN_RIGHT
+LEFT:2.5;CENTER:0.70400006;RIGHT:0.75600004
+state: 107 (107)
+8.81 fps (456 frames / 51776 ms)
+lastCmd: Command:RIGHT;Tag:15;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-03T11:55:06.838
+Training: currentState: 107, currentMove: SPIN_RIGHT
+LEFT:1.0090001;CENTER:1.046;RIGHT:0.91300005
+state: 109 (109)
+8.50 fps (457 frames / 53754 ms)
+lastCmd: Command:STOP;Tag:16;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-03T11:55:07.119
+8.46 fps (458 frames / 54114 ms)
+lastCmd: Command:LEFT;Tag:17;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-03T11:55:07.422
+Training: currentState: 109, currentMove: STOP
+LEFT:2.5;CENTER:0.62200004;RIGHT:0.074
+state: 111 (111)
+8.17 fps (459 frames / 56166 ms)
+lastCmd: Command:LEFT;Tag:18;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-03T11:55:08.118
+Training: currentState: 111, currentMove: SPIN_LEFT
+LEFT:0.87900007;CENTER:0.762;RIGHT:2.5
+state: 113 (113)
+7.90 fps (460 frames / 58201 ms)
+Saving 2016-02-03T11:55:08.118; 83876 chars

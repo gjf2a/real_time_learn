@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.hendrix.ev3.webcamdemo.gui.BSOCDemoController">
+   <center>
+      <Canvas fx:id="image" height="240.0" width="320.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox>
+         <children>
+            <VBox>
+               <children>
+                  <HBox>
+                     <children>
+                        <Label text="Frame Rate" />
+                        <TextField fx:id="frameRate" prefHeight="26.0" prefWidth="95.0" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Cluster" />
+                        <Button fx:id="left" mnemonicParsing="false" text="&lt;" />
+                        <TextField fx:id="clusterNumber" prefHeight="26.0" prefWidth="70.0" />
+                        <Button fx:id="right" mnemonicParsing="false" prefHeight="26.0" prefWidth="21.0" text="&gt;" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Training Time" />
+                        <TextField fx:id="trainingTime" prefHeight="26.0" prefWidth="85.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Canvas fx:id="cluster" height="120.0" width="160.0" BorderPane.alignment="CENTER" />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <VBox>
+         <children>
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Nodes" />
+                  <TextField fx:id="numNodes" prefHeight="26.0" prefWidth="109.0" />
+                  <Button fx:id="start" mnemonicParsing="false" text="Start" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Shrink" />
+                  <ChoiceBox fx:id="shrinkFactor" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Height" />
+                  <TextField fx:id="height" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Width" />
+                  <TextField fx:id="width" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

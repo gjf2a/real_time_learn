@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.hendrix.ev3.ai.topological.sonar.visualize.VisualizerController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="open" mnemonicParsing="false" onAction="#open" text="Open" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Sonar" />
+            <Label text="Minimum" GridPane.columnIndex="1" />
+            <Label text="Maximum" GridPane.columnIndex="2" />
+            <Label text="LEFT" GridPane.rowIndex="1" />
+            <Label text="CENTER" GridPane.rowIndex="2" />
+            <Label text="RIGHT" GridPane.rowIndex="3" />
+            <TextField fx:id="leftMin" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="leftMax" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="centerMin" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="centerMax" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="rightMin" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="rightMax" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label text="Current Node" GridPane.columnIndex="3" />
+            <TextField fx:id="leftCur" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TextField fx:id="centerCur" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <TextField fx:id="rightCur" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <VBox>
+         <children>
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="State" />
+                  <Button fx:id="prevState" mnemonicParsing="false" onAction="#prevState" text="&lt;" />
+                  <TextField fx:id="state" />
+                  <Button fx:id="nextState" mnemonicParsing="false" onAction="#nextState" text="&gt;" />
+                  <Button mnemonicParsing="false" onAction="#constraintsLevelBelow" text="Constraints Level Below" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Level" />
+                  <Button fx:id="prevLevel" mnemonicParsing="false" onAction="#prevLevel" text="&lt;" />
+                  <TextField fx:id="level" />
+                  <Button fx:id="nextLevel" mnemonicParsing="false" onAction="#nextLevel" text="&gt;" />
+                  <Button fx:id="bestLevel" mnemonicParsing="false" onAction="#bestLevel" text="Find best" />
+                  <Button mnemonicParsing="false" onAction="#clearConstraints" text="Clear constraints" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Max Nodes" />
+                  <TextField fx:id="maxNodes" prefHeight="26.0" prefWidth="97.0" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Descendants" />
+                  <TextField fx:id="numDescendants" prefHeight="26.0" prefWidth="90.0" />
+                  <Label text="Outgoing" />
+                  <TextField fx:id="numOutgoing" prefHeight="26.0" prefWidth="95.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

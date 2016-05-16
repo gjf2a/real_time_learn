@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="BSOC" />
+                  <ChoiceBox prefWidth="150.0" />
+                  <Button mnemonicParsing="false" text="Retrieve" />
+                  <Button mnemonicParsing="false" text="Send" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Button mnemonicParsing="false" text="Apply" />
+                  <Button mnemonicParsing="false" text="Monitor" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Nodes" />
+                  <TextField />
+                  <Button mnemonicParsing="false" text="Create" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.hendrix.ev3.remote.net.topological.sonar.SonarClientController">
+   <bottom>
+      <VBox>
+         <children>
+            <Label fx:id="messages" text="Messages" />
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Nodes" />
+                  <TextField fx:id="nodes" prefHeight="26.0" prefWidth="103.0" />
+                  <Button fx:id="start" mnemonicParsing="false" onAction="#start" text="Start" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Button fx:id="requestArchives" mnemonicParsing="false" onAction="#requestArchives" text="Request Archives" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Archive" />
+                  <ChoiceBox fx:id="archives" prefWidth="150.0" />
+                  <Button fx:id="open" mnemonicParsing="false" onAction="#openArchive" text="Open" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <AnchorPane fx:id="keyPane" prefHeight="200.0" prefWidth="217.0" BorderPane.alignment="CENTER">
+         <children>
+            <Polygon fx:id="forward" fill="DODGERBLUE" layoutX="123.0" layoutY="59.0" scaleX="0.5" scaleY="0.5" scaleZ="0.5" stroke="BLACK" strokeType="INSIDE">
+              <points>
+                <Double fx:value="-50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-60.0" />
+              </points>
+            </Polygon>
+            <Polygon fx:id="right" fill="DODGERBLUE" layoutX="173.0" layoutY="110.0" rotate="90.0" scaleX="0.5" scaleY="0.5" stroke="BLACK" strokeType="INSIDE">
+              <points>
+                <Double fx:value="-50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-60.0" />
+              </points>
+            </Polygon>
+            <Polygon fx:id="left" fill="DODGERBLUE" layoutX="73.0" layoutY="110.0" rotate="-90.0" scaleX="0.5" scaleY="0.5" stroke="BLACK" strokeType="INSIDE">
+               <points>
+                  <Double fx:value="-50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="0.0" />
+                  <Double fx:value="-60.0" />
+               </points>
+            </Polygon>
+            <Polygon fx:id="backward" fill="DODGERBLUE" layoutX="123.0" layoutY="160.0" rotate="180.0" scaleX="0.5" scaleY="0.5" stroke="BLACK" strokeType="INSIDE">
+              <points>
+                <Double fx:value="-50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-60.0" />
+              </points>
+            </Polygon>
+            <Rectangle fx:id="stop" arcHeight="5.0" arcWidth="5.0" fill="#ff371f" height="200.0" layoutX="23.0" scaleX="0.25" scaleY="0.25" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Ellipse fx:id="navigate" fill="#ff9b1f" layoutX="48.0" layoutY="49.0" radiusX="100.0" radiusY="80.0" scaleX="0.3" scaleY="0.15" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </center>
+   <right>
+      <GridPane prefHeight="152.0" prefWidth="295.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Sonar" />
+            <Label text="Minimum" GridPane.columnIndex="1" />
+            <Label text="Maximum" GridPane.columnIndex="2" />
+            <Label text="Current" GridPane.columnIndex="3" />
+            <Label text="LEFT" GridPane.rowIndex="1" />
+            <Label text="CENTER" GridPane.rowIndex="2" />
+            <Label text="RIGHT" GridPane.rowIndex="3" />
+            <TextField fx:id="leftMin" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="leftMax" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="leftCurrent" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TextField fx:id="centerMin" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="centerMax" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="centerCurrent" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <TextField fx:id="rightMin" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="rightMax" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="rightCurrent" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </right>
+</BorderPane>

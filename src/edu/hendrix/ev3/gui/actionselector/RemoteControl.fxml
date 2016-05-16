@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.hendrix.ev3.gui.actionselector.RemoteControlController">
+   <top>
+      <VBox>
+         <children>
+            <HBox>
+               <children>
+                  <Label text="BSOC Nodes" />
+                  <TextField fx:id="numNodes" />
+                  <Button fx:id="create" mnemonicParsing="false" text="Create" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Shrink Factor" />
+                  <ChoiceBox fx:id="shrinkFactor" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Button fx:id="retrieveStored" mnemonicParsing="false" text="Get Stored" />
+                  <ChoiceBox fx:id="storedNames" prefWidth="150.0" />
+                  <Button fx:id="applyStored" mnemonicParsing="false" text="Apply" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox fx:id="moveButtons" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

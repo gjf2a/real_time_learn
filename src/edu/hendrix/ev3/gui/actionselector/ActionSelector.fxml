@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.hendrix.ev3.gui.actionselector.ActionSelectorController">
+   <center>
+      <Canvas fx:id="nodeImage" height="200.0" width="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <VBox>
+         <children>
+            <HBox>
+               <children>
+                  <Button fx:id="prevNode" mnemonicParsing="false" text="&lt;" />
+                  <TextField fx:id="current" />
+                  <Button fx:id="nextNode" mnemonicParsing="false" text="&gt;" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <ChoiceBox fx:id="nodeMove" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Source Inputs" />
+                  <TextField fx:id="numSources" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <top>
+      <VBox>
+         <children>
+            <HBox>
+               <children>
+                  <Label text="BSOC" />
+                  <ChoiceBox fx:id="networkChoices" prefHeight="26.0" prefWidth="229.0" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Button fx:id="open" mnemonicParsing="false" text="Open" />
+                  <Button fx:id="update" mnemonicParsing="false" text="Update" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Number of Nodes" BorderPane.alignment="CENTER" />
+                  <TextField fx:id="numNodes" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Total Inputs" />
+                  <TextField fx:id="totalInputs" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

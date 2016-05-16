@@ -1,0 +1,601 @@
+Timestamp 946688216631
+lastCmd: Command:NEW_BSOC;Tag:1;Nodes:100;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:24:14.916
+Starting learner: Nodes: 100
+lastCmd: Command:NEW_BSOC;Tag:2;Nodes:100;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:24:35.929
+Starting learner: Nodes: 100
+lastCmd: Command:FORWARD;Tag:3;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:24:42.588
+Training: currentState: 1, currentMove: STOP
+LEFT:1.0890001;CENTER:0.619;RIGHT:0.42400002
+state: 1 (1)
+Training: currentState: 1, currentMove: FORWARD
+LEFT:1.0320001;CENTER:0.523;RIGHT:0.499
+state: 2 (2)
+Training: currentState: 2, currentMove: FORWARD
+LEFT:1.088;CENTER:0.68700004;RIGHT:0.51000005
+state: 3 (3)
+Training: currentState: 3, currentMove: FORWARD
+LEFT:1.113;CENTER:0.661;RIGHT:0.527
+state: 4 (4)
+Training: currentState: 4, currentMove: FORWARD
+LEFT:1.07;CENTER:0.634;RIGHT:0.517
+state: 5 (5)
+Training: currentState: 5, currentMove: FORWARD
+LEFT:0.748;CENTER:0.609;RIGHT:0.51000005
+state: 6 (6)
+Training: currentState: 6, currentMove: FORWARD
+LEFT:0.748;CENTER:0.586;RIGHT:0.532
+state: 7 (7)
+Training: currentState: 7, currentMove: FORWARD
+LEFT:0.88600004;CENTER:0.574;RIGHT:0.523
+state: 8 (8)
+Training: currentState: 8, currentMove: FORWARD
+LEFT:0.87700003;CENTER:0.536;RIGHT:0.523
+state: 9 (9)
+Training: currentState: 9, currentMove: FORWARD
+LEFT:0.87700003;CENTER:0.51100004;RIGHT:0.52500004
+state: 10 (10)
+Training: currentState: 10, currentMove: FORWARD
+LEFT:0.82600003;CENTER:0.63000005;RIGHT:0.349
+state: 11 (11)
+Training: currentState: 11, currentMove: FORWARD
+LEFT:0.63500005;CENTER:0.586;RIGHT:0.34800002
+state: 12 (12)
+Training: currentState: 12, currentMove: FORWARD
+LEFT:0.63500005;CENTER:0.546;RIGHT:0.34
+state: 13 (13)
+Training: currentState: 13, currentMove: FORWARD
+LEFT:0.527;CENTER:0.50600004;RIGHT:0.509
+state: 14 (14)
+Training: currentState: 14, currentMove: FORWARD
+LEFT:0.527;CENTER:0.45600003;RIGHT:0.504
+state: 15 (15)
+Training: currentState: 15, currentMove: FORWARD
+LEFT:0.47300002;CENTER:0.574;RIGHT:0.34
+state: 16 (16)
+Training: currentState: 16, currentMove: FORWARD
+LEFT:0.439;CENTER:0.365;RIGHT:0.5
+state: 17 (17)
+Training: currentState: 17, currentMove: FORWARD
+LEFT:0.43500003;CENTER:0.34;RIGHT:0.504
+state: 18 (18)
+Training: currentState: 18, currentMove: FORWARD
+LEFT:0.42900002;CENTER:0.321;RIGHT:0.328
+state: 19 (19)
+Training: currentState: 19, currentMove: FORWARD
+LEFT:0.411;CENTER:0.47500002;RIGHT:0.326
+state: 20 (20)
+Training: currentState: 20, currentMove: FORWARD
+LEFT:0.38300002;CENTER:0.43300003;RIGHT:0.326
+state: 21 (21)
+Training: currentState: 21, currentMove: FORWARD
+LEFT:0.365;CENTER:0.39200002;RIGHT:0.326
+state: 22 (22)
+Training: currentState: 22, currentMove: FORWARD
+LEFT:0.34800002;CENTER:0.365;RIGHT:0.321
+state: 23 (23)
+Training: currentState: 23, currentMove: FORWARD
+LEFT:0.321;CENTER:0.33400002;RIGHT:0.326
+state: 24 (24)
+Training: currentState: 24, currentMove: FORWARD
+LEFT:0.321;CENTER:0.326;RIGHT:0.321
+state: 25 (25)
+Training: currentState: 25, currentMove: FORWARD
+LEFT:0.326;CENTER:0.326;RIGHT:0.324
+state: 26 (26)
+Training: currentState: 26, currentMove: FORWARD
+LEFT:0.321;CENTER:0.326;RIGHT:0.326
+state: 27 (27)
+Training: currentState: 27, currentMove: FORWARD
+LEFT:0.29700002;CENTER:0.326;RIGHT:0.33
+state: 28 (28)
+Training: currentState: 28, currentMove: FORWARD
+LEFT:0.273;CENTER:0.326;RIGHT:0.326
+state: 29 (29)
+Training: currentState: 29, currentMove: FORWARD
+LEFT:0.24900001;CENTER:0.326;RIGHT:0.326
+state: 30 (30)
+Training: currentState: 30, currentMove: FORWARD
+LEFT:0.23600002;CENTER:0.574;RIGHT:0.326
+state: 31 (31)
+Training: currentState: 31, currentMove: FORWARD
+LEFT:0.22000001;CENTER:0.57000005;RIGHT:0.61700004
+state: 32 (32)
+Training: currentState: 32, currentMove: FORWARD
+LEFT:0.326;CENTER:0.51900005;RIGHT:0.67600006
+state: 33 (33)
+Training: currentState: 33, currentMove: FORWARD
+LEFT:0.578;CENTER:0.5;RIGHT:2.095
+state: 34 (34)
+Training: currentState: 34, currentMove: FORWARD
+LEFT:0.609;CENTER:0.492;RIGHT:1.345
+state: 35 (35)
+Training: currentState: 35, currentMove: FORWARD
+LEFT:0.794;CENTER:0.509;RIGHT:1.4860001
+state: 36 (36)
+Training: currentState: 36, currentMove: FORWARD
+LEFT:0.78800005;CENTER:0.448;RIGHT:0.93900007
+state: 37 (37)
+Training: currentState: 37, currentMove: FORWARD
+LEFT:0.762;CENTER:0.437;RIGHT:0.33
+state: 38 (38)
+Training: currentState: 38, currentMove: FORWARD
+LEFT:0.76500005;CENTER:0.439;RIGHT:0.33
+state: 39 (39)
+Training: currentState: 39, currentMove: FORWARD
+LEFT:0.754;CENTER:0.44700003;RIGHT:1.955
+state: 40 (40)
+Training: currentState: 40, currentMove: FORWARD
+LEFT:0.754;CENTER:0.39100003;RIGHT:1.9480001
+state: 41 (41)
+Training: currentState: 41, currentMove: FORWARD
+LEFT:0.754;CENTER:0.38300002;RIGHT:0.88600004
+state: 42 (42)
+lastCmd: Command:STOP;Tag:4;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:24:47.398
+lastCmd: Command:RIGHT;Tag:5;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:24:47.949
+Training: currentState: 42, currentMove: STOP
+LEFT:0.35500002;CENTER:0.34;RIGHT:0.85700005
+state: 43 (43)
+Training: currentState: 43, currentMove: SPIN_RIGHT
+LEFT:0.71800005;CENTER:0.33800003;RIGHT:0.84300005
+state: 44 (44)
+Training: currentState: 44, currentMove: SPIN_RIGHT
+LEFT:0.697;CENTER:0.33800003;RIGHT:0.84700006
+state: 45 (45)
+Training: currentState: 45, currentMove: SPIN_RIGHT
+LEFT:0.72;CENTER:0.33800003;RIGHT:1.7
+state: 46 (46)
+Training: currentState: 46, currentMove: SPIN_RIGHT
+LEFT:0.69600004;CENTER:0.34;RIGHT:0.85300004
+state: 47 (47)
+Training: currentState: 47, currentMove: SPIN_RIGHT
+LEFT:0.69100004;CENTER:0.35300002;RIGHT:1.756
+state: 48 (48)
+lastCmd: Command:FORWARD;Tag:6;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:24:48.654
+Training: currentState: 48, currentMove: SPIN_RIGHT
+LEFT:0.328;CENTER:0.35300002;RIGHT:1.7300001
+state: 49 (49)
+Training: currentState: 49, currentMove: FORWARD
+LEFT:0.321;CENTER:1.9720001;RIGHT:1.7300001
+state: 50 (50)
+Training: currentState: 50, currentMove: FORWARD
+LEFT:0.326;CENTER:2.0;RIGHT:1.7300001
+state: 51 (51)
+Training: currentState: 51, currentMove: FORWARD
+LEFT:0.326;CENTER:1.945;RIGHT:0.56100005
+state: 52 (52)
+lastCmd: Command:STOP;Tag:7;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:24:49.030
+lastCmd: Command:FORWARD;Tag:8;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:24:49.797
+Training: currentState: 52, currentMove: STOP
+LEFT:0.26500002;CENTER:0.86500007;RIGHT:0.527
+state: 53 (53)
+Training: currentState: 53, currentMove: FORWARD
+LEFT:0.321;CENTER:0.86500007;RIGHT:0.532
+state: 54 (54)
+Training: currentState: 54, currentMove: FORWARD
+LEFT:0.27100003;CENTER:1.9460001;RIGHT:0.536
+state: 55 (55)
+Training: currentState: 55, currentMove: FORWARD
+LEFT:0.321;CENTER:1.9300001;RIGHT:0.532
+state: 56 (56)
+Training: currentState: 56, currentMove: FORWARD
+LEFT:0.23300001;CENTER:1.894;RIGHT:1.0070001
+state: 57 (57)
+Training: currentState: 57, currentMove: FORWARD
+LEFT:0.20400001;CENTER:0.80200005;RIGHT:1.4740001
+state: 58 (58)
+Training: currentState: 58, currentMove: FORWARD
+LEFT:0.19100001;CENTER:0.81000006;RIGHT:1.6700001
+state: 59 (59)
+Training: currentState: 59, currentMove: FORWARD
+LEFT:1.2980001;CENTER:1.5660001;RIGHT:1.6700001
+state: 60 (60)
+Training: currentState: 60, currentMove: FORWARD
+LEFT:0.915;CENTER:1.815;RIGHT:1.6330001
+state: 61 (61)
+Training: currentState: 61, currentMove: FORWARD
+LEFT:1.7090001;CENTER:1.797;RIGHT:1.366
+state: 62 (62)
+Training: currentState: 62, currentMove: FORWARD
+LEFT:1.21;CENTER:1.1980001;RIGHT:1.092
+state: 63 (63)
+Training: currentState: 63, currentMove: FORWARD
+LEFT:0.11400001;CENTER:1.1980001;RIGHT:1.3490001
+state: 64 (64)
+Training: currentState: 64, currentMove: FORWARD
+LEFT:0.10300001;CENTER:1.7630001;RIGHT:1.315
+state: 65 (65)
+Training: currentState: 65, currentMove: FORWARD
+LEFT:0.10300001;CENTER:0.808;RIGHT:1.3180001
+state: 66 (66)
+Training: currentState: 66, currentMove: FORWARD
+LEFT:0.9620001;CENTER:1.286;RIGHT:1.2980001
+state: 67 (67)
+Training: currentState: 67, currentMove: FORWARD
+LEFT:0.89900005;CENTER:0.87100005;RIGHT:1.2900001
+state: 68 (68)
+Training: currentState: 68, currentMove: FORWARD
+LEFT:0.91700006;CENTER:0.85300004;RIGHT:1.2270001
+state: 69 (69)
+Training: currentState: 69, currentMove: FORWARD
+LEFT:0.9250001;CENTER:0.84700006;RIGHT:1.2270001
+state: 70 (70)
+Training: currentState: 70, currentMove: FORWARD
+LEFT:0.97;CENTER:0.83400005;RIGHT:0.98600006
+state: 71 (71)
+Training: currentState: 71, currentMove: FORWARD
+LEFT:0.90700006;CENTER:0.83500004;RIGHT:1.2780001
+state: 72 (72)
+Training: currentState: 72, currentMove: FORWARD
+LEFT:0.374;CENTER:0.808;RIGHT:0.76600003
+state: 73 (73)
+Training: currentState: 73, currentMove: FORWARD
+LEFT:0.86100006;CENTER:0.634;RIGHT:1.2550001
+state: 74 (74)
+Training: currentState: 74, currentMove: FORWARD
+LEFT:0.883;CENTER:0.91600007;RIGHT:1.238
+state: 75 (75)
+Training: currentState: 75, currentMove: FORWARD
+LEFT:0.79200006;CENTER:0.91300005;RIGHT:1.171
+state: 76 (76)
+Training: currentState: 76, currentMove: FORWARD
+LEFT:0.81000006;CENTER:0.91300005;RIGHT:1.1730001
+state: 77 (77)
+Training: currentState: 77, currentMove: FORWARD
+LEFT:0.81600004;CENTER:0.901;RIGHT:1.174
+state: 78 (78)
+Training: currentState: 78, currentMove: FORWARD
+LEFT:1.5280001;CENTER:0.81000006;RIGHT:1.166
+state: 79 (79)
+Training: currentState: 79, currentMove: FORWARD
+LEFT:0.79600006;CENTER:1.0990001;RIGHT:1.115
+state: 80 (80)
+Training: currentState: 80, currentMove: FORWARD
+LEFT:0.78400004;CENTER:1.0840001;RIGHT:1.097
+state: 81 (81)
+Training: currentState: 81, currentMove: FORWARD
+LEFT:1.46;CENTER:1.0600001;RIGHT:1.0910001
+state: 82 (82)
+Training: currentState: 82, currentMove: FORWARD
+LEFT:1.4740001;CENTER:1.0300001;RIGHT:1.092
+state: 83 (83)
+Training: currentState: 83, currentMove: FORWARD
+LEFT:1.48;CENTER:1.0200001;RIGHT:1.08
+state: 84 (84)
+Training: currentState: 84, currentMove: FORWARD
+LEFT:1.4260001;CENTER:1.0;RIGHT:1.0680001
+state: 85 (85)
+Training: currentState: 85, currentMove: FORWARD
+LEFT:1.107;CENTER:0.984;RIGHT:1.0580001
+state: 86 (86)
+Training: currentState: 86, currentMove: FORWARD
+LEFT:1.452;CENTER:0.97700006;RIGHT:1.0500001
+state: 87 (87)
+Training: currentState: 87, currentMove: FORWARD
+LEFT:0.326;CENTER:1.5050001;RIGHT:1.0370001
+state: 88 (88)
+Training: currentState: 88, currentMove: FORWARD
+LEFT:0.42000002;CENTER:1.5050001;RIGHT:1.044
+state: 89 (89)
+Training: currentState: 89, currentMove: FORWARD
+LEFT:1.4200001;CENTER:1.429;RIGHT:1.0300001
+state: 90 (90)
+Training: currentState: 90, currentMove: FORWARD
+LEFT:0.78800005;CENTER:1.044;RIGHT:1.024
+state: 91 (91)
+Training: currentState: 91, currentMove: FORWARD
+LEFT:0.818;CENTER:1.4480001;RIGHT:1.0070001
+state: 92 (92)
+Training: currentState: 92, currentMove: FORWARD
+LEFT:0.77300006;CENTER:0.754;RIGHT:1.0020001
+state: 93 (93)
+Training: currentState: 93, currentMove: FORWARD
+LEFT:0.77300006;CENTER:1.123;RIGHT:0.994
+state: 94 (94)
+Training: currentState: 94, currentMove: FORWARD
+LEFT:0.77300006;CENTER:1.0760001;RIGHT:0.994
+state: 95 (95)
+Training: currentState: 95, currentMove: FORWARD
+LEFT:0.77300006;CENTER:0.883;RIGHT:0.98100007
+state: 96 (96)
+Training: currentState: 96, currentMove: FORWARD
+LEFT:1.3050001;CENTER:2.5;RIGHT:0.97
+state: 97 (97)
+Training: currentState: 97, currentMove: FORWARD
+LEFT:1.286;CENTER:1.261;RIGHT:0.95300007
+state: 98 (98)
+Training: currentState: 98, currentMove: FORWARD
+LEFT:1.289;CENTER:0.96800005;RIGHT:0.96000004
+state: 99 (99)
+Training: currentState: 99, currentMove: FORWARD
+LEFT:1.289;CENTER:0.96300006;RIGHT:0.95500004
+state: 100 (100)
+Training: currentState: 100, currentMove: FORWARD
+LEFT:0.88900006;CENTER:0.947;RIGHT:0.947
+state: 101 (101)
+Training: currentState: 101, currentMove: FORWARD
+LEFT:0.757;CENTER:1.062;RIGHT:1.0990001
+state: 103 (103)
+Training: currentState: 103, currentMove: FORWARD
+LEFT:0.16600001;CENTER:0.762;RIGHT:0.744
+state: 105 (105)
+Training: currentState: 105, currentMove: FORWARD
+LEFT:0.47900003;CENTER:0.53400004;RIGHT:0.58100003
+state: 107 (107)
+lastCmd: Command:RIGHT;Tag:9;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:03.182
+Training: currentState: 107, currentMove: FORWARD
+LEFT:0.24300002;CENTER:0.326;RIGHT:0.73
+state: 109 (109)
+lastCmd: Command:STOP;Tag:10;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:04.581
+lastCmd: Command:BACKWARD;Tag:11;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:06.980
+Training: currentState: 109, currentMove: STOP
+LEFT:0.065000005;CENTER:0.120000005;RIGHT:0.49600002
+state: 111 (111)
+Training: currentState: 111, currentMove: BACKWARD
+LEFT:0.065000005;CENTER:0.120000005;RIGHT:0.49600002
+state: 113 (113)
+Training: currentState: 113, currentMove: BACKWARD
+LEFT:0.10300001;CENTER:1.6190001;RIGHT:0.504
+state: 115 (115)
+Training: currentState: 115, currentMove: BACKWARD
+LEFT:0.149;CENTER:0.19900002;RIGHT:0.546
+state: 117 (117)
+Training: currentState: 117, currentMove: BACKWARD
+LEFT:0.18300001;CENTER:0.23700002;RIGHT:0.58000004
+state: 119 (119)
+Training: currentState: 119, currentMove: BACKWARD
+LEFT:0.21200001;CENTER:0.273;RIGHT:0.62200004
+state: 121 (121)
+Training: currentState: 121, currentMove: BACKWARD
+LEFT:0.25100002;CENTER:0.128;RIGHT:0.735
+state: 123 (123)
+lastCmd: Command:STOP;Tag:12;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:13.797
+lastCmd: Command:RIGHT;Tag:13;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:14.525
+Training: currentState: 123, currentMove: STOP
+LEFT:0.289;CENTER:0.34;RIGHT:0.62600005
+state: 125 (125)
+Training: currentState: 125, currentMove: SPIN_RIGHT
+LEFT:0.289;CENTER:0.347;RIGHT:0.74200004
+state: 127 (127)
+Training: currentState: 127, currentMove: SPIN_RIGHT
+LEFT:0.273;CENTER:0.40800002;RIGHT:0.64400005
+state: 129 (129)
+lastCmd: Command:STOP;Tag:14;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:17.108
+lastCmd: Command:FORWARD;Tag:15;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:17.788
+Training: currentState: 129, currentMove: STOP
+LEFT:0.83300006;CENTER:0.771;RIGHT:0.689
+state: 131 (131)
+Training: currentState: 131, currentMove: FORWARD
+LEFT:0.71300006;CENTER:0.77400005;RIGHT:0.78800005
+state: 133 (133)
+Training: currentState: 133, currentMove: FORWARD
+LEFT:0.67200005;CENTER:0.63500005;RIGHT:0.503
+state: 135 (135)
+Training: currentState: 135, currentMove: FORWARD
+LEFT:0.455;CENTER:0.46;RIGHT:0.48800004
+state: 137 (137)
+lastCmd: Command:STOP;Tag:16;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:21.268
+lastCmd: Command:RIGHT;Tag:17;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:22.260
+Training: currentState: 137, currentMove: STOP
+LEFT:0.321;CENTER:0.32200003;RIGHT:0.32000002
+state: 140 (24)
+Training: currentState: 140, currentMove: SPIN_RIGHT
+LEFT:0.30400002;CENTER:0.279;RIGHT:0.321
+state: 141 (141)
+Training: currentState: 141, currentMove: SPIN_RIGHT
+LEFT:0.22700001;CENTER:0.326;RIGHT:0.78400004
+state: 143 (143)
+Training: currentState: 143, currentMove: SPIN_RIGHT
+LEFT:0.23500001;CENTER:0.33600003;RIGHT:0.772
+state: 146 (143)
+lastCmd: Command:STOP;Tag:18;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:25.100
+lastCmd: Command:FORWARD;Tag:19;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:26.540
+Training: currentState: 146, currentMove: STOP
+LEFT:0.762;CENTER:1.008;RIGHT:1.074
+state: 147 (147)
+Training: currentState: 147, currentMove: FORWARD
+LEFT:0.77300006;CENTER:1.307;RIGHT:1.088
+state: 149 (149)
+Training: currentState: 149, currentMove: FORWARD
+LEFT:2.5;CENTER:1.1830001;RIGHT:2.342
+state: 151 (151)
+Training: currentState: 151, currentMove: FORWARD
+LEFT:0.59800005;CENTER:1.0320001;RIGHT:2.173
+state: 153 (153)
+Training: currentState: 153, currentMove: FORWARD
+LEFT:0.326;CENTER:0.326;RIGHT:2.5
+state: 155 (155)
+Training: currentState: 155, currentMove: FORWARD
+LEFT:0.279;CENTER:0.326;RIGHT:2.5
+state: 157 (157)
+lastCmd: Command:STOP;Tag:20;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:31.629
+lastCmd: Command:RIGHT;Tag:21;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:33.572
+Training: currentState: 157, currentMove: STOP
+LEFT:0.20300001;CENTER:0.44700003;RIGHT:2.5
+state: 159 (159)
+Training: currentState: 159, currentMove: SPIN_RIGHT
+LEFT:0.19900002;CENTER:0.554;RIGHT:2.5
+state: 161 (161)
+Training: currentState: 161, currentMove: SPIN_RIGHT
+LEFT:0.418;CENTER:2.5;RIGHT:1.6620001
+state: 163 (163)
+lastCmd: Command:STOP;Tag:22;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:35.636
+lastCmd: Command:FORWARD;Tag:23;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:36.996
+Training: currentState: 163, currentMove: STOP
+LEFT:1.046;CENTER:1.0660001;RIGHT:1.074
+state: 165 (165)
+Training: currentState: 165, currentMove: FORWARD
+LEFT:1.154;CENTER:1.054;RIGHT:1.074
+state: 167 (167)
+Training: currentState: 167, currentMove: FORWARD
+LEFT:0.757;CENTER:0.804;RIGHT:0.95500004
+state: 169 (169)
+Training: currentState: 169, currentMove: FORWARD
+LEFT:0.86300004;CENTER:0.83400005;RIGHT:0.947
+state: 171 (171)
+Training: currentState: 171, currentMove: FORWARD
+LEFT:0.984;CENTER:0.89400005;RIGHT:0.89400005
+state: 173 (173)
+Training: currentState: 173, currentMove: FORWARD
+LEFT:1.092;CENTER:1.0320001;RIGHT:0.822
+state: 175 (175)
+Training: currentState: 175, currentMove: FORWARD
+LEFT:0.73600006;CENTER:0.75000006;RIGHT:0.76600003
+state: 178 (133)
+lastCmd: Command:STOP;Tag:24;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:43.875
+lastCmd: Command:LEFT;Tag:25;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:44.659
+Training: currentState: 178, currentMove: STOP
+LEFT:0.78800005;CENTER:0.446;RIGHT:0.67200005
+state: 179 (179)
+Training: currentState: 179, currentMove: SPIN_LEFT
+LEFT:0.67;CENTER:0.70600003;RIGHT:0.64400005
+state: 181 (181)
+Training: currentState: 181, currentMove: SPIN_LEFT
+LEFT:0.943;CENTER:0.73200005;RIGHT:0.448
+state: 183 (183)
+lastCmd: Command:STOP;Tag:26;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:47.195
+lastCmd: Command:FORWARD;Tag:27;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:48.187
+Training: currentState: 183, currentMove: STOP
+LEFT:2.5;CENTER:2.5;RIGHT:0.321
+state: 185 (185)
+Training: currentState: 185, currentMove: FORWARD
+LEFT:2.5;CENTER:2.5;RIGHT:0.321
+state: 188 (185)
+Training: currentState: 188, currentMove: FORWARD
+LEFT:0.98600006;CENTER:0.915;RIGHT:0.446
+state: 189 (189)
+Training: currentState: 189, currentMove: FORWARD
+LEFT:0.78400004;CENTER:0.326;RIGHT:0.67
+state: 191 (191)
+Training: currentState: 191, currentMove: FORWARD
+LEFT:1.0680001;CENTER:0.573;RIGHT:0.504
+state: 194 (2)
+Training: currentState: 194, currentMove: FORWARD
+LEFT:1.1550001;CENTER:0.41200003;RIGHT:0.34800002
+state: 195 (195)
+Training: currentState: 195, currentMove: FORWARD
+LEFT:1.866;CENTER:1.3180001;RIGHT:0.19100001
+state: 197 (197)
+lastCmd: Command:STOP;Tag:28;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:54.835
+lastCmd: Command:FORWARD;Tag:29;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:25:56.523
+Training: currentState: 197, currentMove: STOP
+LEFT:0.9760001;CENTER:2.5;RIGHT:0.45400003
+state: 199 (199)
+Training: currentState: 199, currentMove: FORWARD
+LEFT:1.0370001;CENTER:1.092;RIGHT:0.44700003
+state: 201 (201)
+Training: currentState: 201, currentMove: FORWARD
+LEFT:0.551;CENTER:0.89100003;RIGHT:0.321
+state: 203 (203)
+Training: currentState: 203, currentMove: FORWARD
+LEFT:0.76400006;CENTER:0.869;RIGHT:1.024
+state: 206 (96)
+Training: currentState: 206, currentMove: FORWARD
+LEFT:0.59000003;CENTER:2.5;RIGHT:0.99000007
+state: 207 (207)
+Training: currentState: 207, currentMove: FORWARD
+LEFT:0.46;CENTER:0.321;RIGHT:0.404
+state: 209 (209)
+Training: currentState: 209, currentMove: FORWARD
+LEFT:0.518;CENTER:1.0580001;RIGHT:0.63000005
+state: 211 (211)
+Training: currentState: 211, currentMove: FORWARD
+LEFT:0.61700004;CENTER:2.5;RIGHT:0.63000005
+state: 213 (213)
+Training: currentState: 213, currentMove: FORWARD
+LEFT:0.689;CENTER:0.78800005;RIGHT:0.551
+state: 215 (215)
+Training: currentState: 215, currentMove: FORWARD
+LEFT:1.5370001;CENTER:0.9850001;RIGHT:0.418
+state: 217 (217)
+Training: currentState: 217, currentMove: FORWARD
+LEFT:1.519;CENTER:0.11800001;RIGHT:0.25100002
+state: 219 (219)
+Training: currentState: 219, currentMove: FORWARD
+LEFT:0.328;CENTER:0.326;RIGHT:0.326
+state: 222 (22)
+Training: currentState: 222, currentMove: FORWARD
+LEFT:0.89900005;CENTER:0.929;RIGHT:0.326
+state: 223 (223)
+Training: currentState: 223, currentMove: FORWARD
+LEFT:0.40100002;CENTER:0.321;RIGHT:0.321
+state: 226 (19)
+Training: currentState: 226, currentMove: FORWARD
+LEFT:0.49600002;CENTER:0.537;RIGHT:0.393
+state: 228 (16)
+Training: currentState: 228, currentMove: FORWARD
+LEFT:0.35700002;CENTER:0.34;RIGHT:0.37600002
+state: 230 (22)
+lastCmd: Command:STOP;Tag:30;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:26:13.146
+lastCmd: Command:RIGHT;Tag:31;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:26:14.522
+Training: currentState: 230, currentMove: STOP
+LEFT:0.11400001;CENTER:0.13900001;RIGHT:0.23500001
+state: 231 (231)
+Training: currentState: 231, currentMove: SPIN_RIGHT
+LEFT:0.12200001;CENTER:0.13900001;RIGHT:0.23500001
+state: 234 (231)
+Training: currentState: 234, currentMove: SPIN_RIGHT
+LEFT:0.074;CENTER:0.19700001;RIGHT:0.23300001
+state: 236 (231)
+Training: currentState: 236, currentMove: SPIN_RIGHT
+LEFT:0.25100002;CENTER:0.28100002;RIGHT:0.35300002
+state: 238 (22)
+Training: currentState: 238, currentMove: SPIN_RIGHT
+LEFT:0.22700001;CENTER:0.42700002;RIGHT:0.37600002
+state: 239 (239)
+lastCmd: Command:STOP;Tag:32;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:26:19.178
+lastCmd: Command:FORWARD;Tag:33;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:26:20.938
+Training: currentState: 239, currentMove: STOP
+LEFT:0.45200002;CENTER:0.404;RIGHT:2.5
+state: 241 (241)
+Training: currentState: 241, currentMove: FORWARD
+LEFT:0.38000003;CENTER:0.40800002;RIGHT:1.4560001
+state: 243 (243)
+Training: currentState: 243, currentMove: FORWARD
+LEFT:0.20600002;CENTER:0.44700003;RIGHT:1.1
+state: 245 (245)
+lastCmd: Command:STOP;Tag:34;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:26:23.338
+lastCmd: Command:BACKWARD;Tag:35;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:26:26.090
+Training: currentState: 245, currentMove: STOP
+LEFT:0.374;CENTER:0.321;RIGHT:0.41000003
+state: 248 (19)
+Training: currentState: 248, currentMove: BACKWARD
+LEFT:0.34;CENTER:0.321;RIGHT:0.40300003
+state: 250 (22)
+Training: currentState: 250, currentMove: BACKWARD
+LEFT:0.046000004;CENTER:0.321;RIGHT:0.46
+state: 251 (251)
+lastCmd: Command:STOP;Tag:36;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:26:29.066
+lastCmd: Command:RIGHT;Tag:37;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:26:29.994
+Training: currentState: 251, currentMove: STOP
+LEFT:0.11800001;CENTER:0.42800003;RIGHT:1.5970001
+state: 253 (253)
+Training: currentState: 253, currentMove: SPIN_RIGHT
+LEFT:0.10300001;CENTER:0.49800003;RIGHT:1.549
+state: 256 (253)
+Training: currentState: 256, currentMove: SPIN_RIGHT
+LEFT:0.29700002;CENTER:2.5;RIGHT:1.0370001
+state: 257 (257)
+lastCmd: Command:STOP;Tag:38;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:26:32.442
+lastCmd: Command:STOP;Tag:39;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:26:33.625
+lastCmd: Command:STOP;Tag:40;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:26:36.105
+lastCmd: Command:FORWARD;Tag:41;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:26:37.281
+Training: currentState: 257, currentMove: STOP
+LEFT:1.5500001;CENTER:1.309;RIGHT:1.46
+state: 259 (259)
+Training: currentState: 259, currentMove: FORWARD
+LEFT:1.404;CENTER:2.108;RIGHT:1.4510001
+state: 261 (261)
+Training: currentState: 261, currentMove: FORWARD
+LEFT:1.19;CENTER:1.2540001;RIGHT:1.4740001
+state: 263 (263)
+Training: currentState: 263, currentMove: FORWARD
+LEFT:0.78800005;CENTER:1.189;RIGHT:1.2820001
+state: 265 (265)
+Training: currentState: 265, currentMove: FORWARD
+LEFT:0.83100003;CENTER:0.76600003;RIGHT:0.794
+state: 268 (131)
+Training: currentState: 268, currentMove: FORWARD
+LEFT:0.45400003;CENTER:0.901;RIGHT:0.90300006
+state: 269 (269)
+lastCmd: Command:STOP;Tag:42;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:26:43.745
+lastCmd: Command:QUIT;Tag:43;Nodes:0;Goal:LEFT{[,]}CENTER{[,]}RIGHT{[,]};Stamp:2016-02-04T11:26:46.472

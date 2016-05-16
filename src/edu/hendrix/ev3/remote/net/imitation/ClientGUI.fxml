@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.hendrix.ev3.remote.net.imitation.ClientController">
+   <center>
+      <AnchorPane fx:id="pane" prefHeight="256.0" prefWidth="338.0" BorderPane.alignment="CENTER">
+         <children>
+            <Polygon fx:id="up" fill="DODGERBLUE" layoutX="127.0" layoutY="60.0" scaleX="0.5" scaleY="0.5" scaleZ="0.5" stroke="BLACK" strokeType="INSIDE">
+              <points>
+                <Double fx:value="-50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-60.0" />
+              </points>
+            </Polygon>
+            <Polygon fx:id="right" fill="DODGERBLUE" layoutX="177.0" layoutY="110.0" rotate="90.0" scaleX="0.5" scaleY="0.5" scaleZ="0.5" stroke="BLACK" strokeType="INSIDE">
+               <points>
+                  <Double fx:value="-50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="0.0" />
+                  <Double fx:value="-60.0" />
+               </points>
+            </Polygon>
+            <Polygon fx:id="left" fill="DODGERBLUE" layoutX="77.0" layoutY="110.0" rotate="-90.0" scaleX="0.5" scaleY="0.5" scaleZ="0.5" stroke="BLACK" strokeType="INSIDE">
+               <points>
+                  <Double fx:value="-50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="0.0" />
+                  <Double fx:value="-60.0" />
+               </points>
+            </Polygon>
+            <Circle fx:id="stop" fill="#ff451f" layoutX="102.0" layoutY="156.0" radius="100.0" scaleX="0.2" scaleY="0.2" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="auto" fill="#24ff21" layoutX="152.0" layoutY="156.0" radius="100.0" scaleX="0.2" scaleY="0.2" scaleZ="0.2" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Shrink" />
+            <ChoiceBox fx:id="shrinkFactor" />
+            <Label text="Nodes" />
+            <ChoiceBox fx:id="maxNodes" />
+            <Button fx:id="startRobot" mnemonicParsing="false" onAction="#start" text="Start Robot" />
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <VBox>
+         <children>
+            <Label fx:id="messages" text="Messages" BorderPane.alignment="CENTER" />
+            <TableView fx:id="statTable" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="moveColumn" prefWidth="75.0" text="Move" />
+                <TableColumn fx:id="percentColumn" prefWidth="75.0" text="\% Correct" />
+                  <TableColumn fx:id="successColumn" prefWidth="75.0" text="# Correct" />
+                  <TableColumn fx:id="attemptColumn" prefWidth="75.0" text="# Attempts" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

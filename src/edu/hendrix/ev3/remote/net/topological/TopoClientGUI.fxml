@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.hendrix.ev3.remote.net.topological.TopoClientController">
+   <top>
+      <AnchorPane fx:id="keyPane" prefHeight="200.0" prefWidth="293.0" BorderPane.alignment="CENTER">
+         <children>
+            <Polygon fx:id="forward" fill="DODGERBLUE" layoutX="150.0" layoutY="60.0" scaleX="0.5" scaleY="0.5" scaleZ="0.5" stroke="BLACK" strokeType="INSIDE">
+              <points>
+                <Double fx:value="-50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-60.0" />
+              </points>
+            </Polygon>
+            <Polygon fx:id="right" fill="DODGERBLUE" layoutX="200.0" layoutY="110.0" rotate="90.0" scaleX="0.5" scaleY="0.5" stroke="BLACK" strokeType="INSIDE">
+              <points>
+                <Double fx:value="-50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-60.0" />
+              </points>
+            </Polygon>
+            <Polygon fx:id="left" fill="DODGERBLUE" layoutX="100.0" layoutY="110.0" rotate="-90.0" scaleX="0.5" scaleY="0.5" stroke="BLACK" strokeType="INSIDE">
+               <points>
+                  <Double fx:value="-50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="0.0" />
+                  <Double fx:value="-60.0" />
+               </points>
+            </Polygon>
+            <Polygon fx:id="backward" fill="DODGERBLUE" layoutX="150.0" layoutY="160.0" rotate="180.0" scaleX="0.5" scaleY="0.5" stroke="BLACK" strokeType="INSIDE">
+              <points>
+                <Double fx:value="-50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-60.0" />
+              </points>
+            </Polygon>
+            <Rectangle fx:id="stop" arcHeight="5.0" arcWidth="5.0" fill="#ff371f" height="200.0" layoutX="50.0" scaleX="0.25" scaleY="0.25" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Rectangle fx:id="photo" arcHeight="5.0" arcWidth="5.0" fill="#232425" height="200.0" layoutX="-58.0" layoutY="-65.0" scaleX="0.2" scaleY="0.1" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Circle fill="#f5f7f8" layoutX="42.0" layoutY="35.0" radius="100.0" scaleX="0.1" scaleY="0.07" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fx:id="next" fill="#1fff5a" layoutX="65.0" layoutY="160.0" rotate="90.0" scaleX="0.2" scaleY="0.3" stroke="BLACK" strokeType="INSIDE">
+              <points>
+                <Double fx:value="-50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-60.0" />
+              </points>
+            </Polygon>
+            <Polygon fx:id="prev" fill="#1fff5a" layoutX="32.0" layoutY="160.0" rotate="-90.0" scaleX="0.2" scaleY="0.3" stroke="BLACK" strokeType="INSIDE">
+               <points>
+                  <Double fx:value="-50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="0.0" />
+                  <Double fx:value="-60.0" />
+               </points>
+            </Polygon>
+            <Ellipse fx:id="wander" fill="#a165a8" layoutX="47.0" layoutY="75.0" radiusX="100.0" radiusY="80.0" scaleX="0.3" scaleY="0.15" stroke="BLACK" strokeType="INSIDE" />
+            <Ellipse fx:id="navigate" fill="#ff9b1f" layoutX="47.0" layoutY="112.0" radiusX="100.0" radiusY="80.0" scaleX="0.3" scaleY="0.15" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <VBox>
+         <children>
+            <Label fx:id="messages" text="Messages" />
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Nodes" />
+                  <TextField fx:id="numNodes" prefHeight="26.0" prefWidth="103.0" />
+                  <Button fx:id="start" mnemonicParsing="false" onAction="#start" text="Start" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Shrink" />
+                  <TextField fx:id="shrink" prefHeight="26.0" prefWidth="105.0" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Button fx:id="requestArchives" mnemonicParsing="false" onAction="#requestArchives" text="Request Archives" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Archive" />
+                  <ChoiceBox fx:id="archives" prefWidth="150.0" />
+                  <Button fx:id="open" mnemonicParsing="false" onAction="#openArchive" text="Open" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <Canvas fx:id="image" height="200.0" width="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
