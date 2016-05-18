@@ -8,5 +8,8 @@
 	<classpathentry kind="lib" path="/Users/gabriel/software/webcam-capture-0/webcam-capture-0.3.10.jar"/>
 	<classpathentry kind="lib" path="/Users/gabriel/software/webcam-capture-0/libs/bridj-0.6.2.jar"/>
 	<classpathentry kind="lib" path="/Users/gabriel/software/webcam-capture-0/libs/slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="/Users/gabriel/software/ejml-0.29-libs/EJML-core-0.29.jar"/>
+	<classpathentry kind="lib" path="/Users/gabriel/software/ejml-0.29-libs/EJML-simple-0.29.jar"/>
+	<classpathentry kind="lib" path="/Users/gabriel/software/ejml-0.29-libs/EJML-dense64-0.29.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

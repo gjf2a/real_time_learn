@@ -27,6 +27,7 @@ import edu.hendrix.ev3.imgproc.FAST;
 import edu.hendrix.ev3.imgproc.FeatureFlow;
 import edu.hendrix.ev3.imgproc.Normal_BRIEF_256_31_a;
 import edu.hendrix.ev3.imgproc.PointPairList;
+import edu.hendrix.ev3.imgproc.RANSAC;
 import edu.hendrix.ev3.imgproc.Vector2D;
 import edu.hendrix.ev3.util.Duple;
 
@@ -98,6 +99,9 @@ public class VideoViewController {
 	
 	@FXML
 	CheckBox viewSmoothing;
+	
+	@FXML
+	CheckBox viewRANSACFlow;
 	
 	@FXML
 	Label thresholdValue;
@@ -248,6 +252,13 @@ public class VideoViewController {
 			ff.keepOnly(1);
 			result.add(new FlowRenderer(prev, ff));
 			messages.setText(Vector2D.mean(ff.vectors()).toString());
+		} else if (current > 0 && viewRANSACFlow.isSelected()) {
+			AdaptedYUYVImage prev = basicProc(current - 1);
+			FeatureFlow ff = FeatureFlow.makePatchMatches(patcher, 500, prev, img);
+			ff.filterWith(map -> RANSAC.filter(map, 100, 7, 5.0, 10));
+			result.add(new FlowRenderer(prev, ff));
+			Vector2D mean = Vector2D.mean(ff.vectors());
+			messages.setText(String.format("Mean:(%5.2f,%5.2f) (%d features)", mean.R(), mean.theta(), ff.asMap().size()));
 		}
 		else if (current > 0 && (viewStableFlow.isSelected() || viewGreedyFlow.isSelected())) {
 			AdaptedYUYVImage prev = basicProc(current - 1);

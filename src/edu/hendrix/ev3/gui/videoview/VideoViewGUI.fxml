@@ -67,6 +67,7 @@
                   <CheckBox fx:id="viewBriefFlow" mnemonicParsing="false" text="BRIEF Flow" />
                </children>
             </HBox>
+            <CheckBox fx:id="viewRANSACFlow" mnemonicParsing="false" text="RANSAC" />
          </children>
       </VBox>
    </top>

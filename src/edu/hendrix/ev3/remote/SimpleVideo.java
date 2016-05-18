@@ -46,6 +46,7 @@ public class SimpleVideo {
 				image.display(g, 0, 0, image.getMeanY());
 				examples.add(move, new AdaptedYUYVImage(image));
 				move = updatedMove(move);
+				Mover.move(move);
 			}
 			wc.close();
 			Logger.EV3Log.log(String.format("%d images grabbed", framesGrabbed));

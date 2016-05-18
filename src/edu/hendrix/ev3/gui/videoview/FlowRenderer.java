@@ -26,7 +26,7 @@ public class FlowRenderer implements ConcreteRenderer {
 	public void renderLoop(GraphicsContext g, double cellWidth, double cellHeight) {
 		g.setStroke(Color.RED);
 		g.setLineWidth(1.0);
-		for (Entry<Feature, Feature> pair: ff) {
+		for (Entry<Feature, Feature> pair: ff.asMap().entrySet()) {
 			g.strokeLine(pair.getKey().X() * cellWidth, pair.getKey().Y() * cellHeight, pair.getValue().X() * cellWidth, pair.getValue().Y() * cellHeight);
 		}
 	}

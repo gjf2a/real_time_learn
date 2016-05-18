@@ -1,15 +1,17 @@
 package edu.hendrix.ev3.imgproc;
 
 import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.Collections;
 import java.util.Map.Entry;
+import java.util.function.Function;
 
 import edu.hendrix.ev3.util.Stdev;
 import edu.hendrix.ev3.util.StdevType;
 import javafx.scene.paint.Color;
 
-public class FeatureFlow implements Iterable<Entry<Feature, Feature>> {
+public class FeatureFlow {
 	private final static int GREEDY_SEARCH_WINDOW = 6;
 	
 	private LinkedHashMap<Feature,Feature> old2new;
@@ -42,6 +44,10 @@ public class FeatureFlow implements Iterable<Entry<Feature, Feature>> {
 			}
 		}
 		return new FeatureFlow(old2new);
+	}
+	
+	public void filterWith(Function<Map<Feature,Feature>,LinkedHashMap<Feature,Feature>> filter) {
+		old2new = filter.apply(old2new);
 	}
 	
 	public static FeatureFlow makeGreedyFAST(BitImage prev, BitImage next) {
@@ -95,9 +101,8 @@ public class FeatureFlow implements Iterable<Entry<Feature, Feature>> {
 		}
 		return result;
 	}
-
-	@Override
-	public Iterator<Entry<Feature, Feature>> iterator() {
-		return old2new.entrySet().iterator();
+	
+	public Map<Feature,Feature> asMap() {
+		return (Map<Feature, Feature>) Collections.unmodifiableMap(old2new);
 	}
 }
