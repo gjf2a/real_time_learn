@@ -1,5 +1,6 @@
 package edu.hendrix.ev3.ai.supervised.evaluable;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -12,7 +13,7 @@ import edu.hendrix.ev3.remote.Move;
 import edu.hendrix.ev3.ai.cluster.yuv.YUYVDistanceFuncs;
 
 public class KnearestNeighbors implements RobotLearner {
-	private HashMap<AdaptedYUYVImage,Move> neighbors = new HashMap<AdaptedYUYVImage,Move>();
+	private HashMap<Move,ArrayList<AdaptedYUYVImage>> neighbors = new HashMap<>();
 	private int k = 1;
 
 	
@@ -26,50 +27,35 @@ public class KnearestNeighbors implements RobotLearner {
 	}
 	@Override
 	public void train(AdaptedYUYVImage img, Move current) {
-		neighbors.put(img, current);
+		if(!neighbors.containsKey(current)){
+			neighbors.put(current, new ArrayList<AdaptedYUYVImage>());
+		}
+		neighbors.get(current).add(img);
 	}
+	
 	@Override
 	public Move bestMatchFor(AdaptedYUYVImage img) {
-		TreeMap<Number, Move> kClosest = new TreeMap<>();
-		for (Map.Entry<AdaptedYUYVImage,Move> i: neighbors.entrySet()){
-			long dist = distFunction(i.getKey(),img);
-			if (kClosest.size() < k){
-				kClosest.put(dist, i.getValue());
-			}
-			else if(kClosest.higherEntry(dist) != null){
-				kClosest.put(dist, i.getValue());
-				kClosest.pollLastEntry();
+		long minDist = Long.MAX_VALUE;
+		AdaptedYUYVImage minImage = null;
+		Move minMove = Move.STOP;
+		for (Move m: neighbors.keySet()){
+			for (AdaptedYUYVImage i: neighbors.get(m)){
+				long tempDist = distFunction(i,img);
+				if (tempDist < minDist){
+					minDist = tempDist;
+					minImage = i;
+					minMove = m;
+				}
 			}
 		}
+		return minMove;
 		
-		return getMostCommonElement(kClosest);
 	}
 	public long distFunction(AdaptedYUYVImage img1, AdaptedYUYVImage img2){
 		// Function subject to change
 		long dist = YUYVDistanceFuncs.euclideanAllChannels(img1, img2);
 		return dist;
 	}
-	public Move getMostCommonElement(TreeMap<Number, Move> kClosest){
-		HashMap<Move,Integer> occurences = new HashMap<>();
-		for (Move m: kClosest.values()){
-			if (occurences.containsKey(m)){
-				occurences.put(m, occurences.get(m)+1);
-			}
-			else{
-				occurences.put(m, 1);
-			}
-		}
-		int maxValue = 0;
-		Move maxMove = Move.NONE;
-		for (Entry<Move, Integer> m1: occurences.entrySet()){
-			if (maxValue < m1.getValue()){
-				maxValue = m1.getValue();
-				maxMove = m1.getKey();
-			}
-		}
-		return maxMove;
-	}
-
 	@Override
 	public boolean isTrained() {
 		// TODO Auto-generated method stub
