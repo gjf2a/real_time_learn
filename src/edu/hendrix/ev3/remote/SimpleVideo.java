@@ -38,6 +38,10 @@ public class SimpleVideo {
 			LCD.clear();
 			startTime = System.currentTimeMillis();
 			Move move = Move.STOP;
+			while (move == Move.STOP) {
+				move = updatedMove(move);
+			}
+			System.out.println("Recording...");
 			while (!quit && !Button.ESCAPE.isDown() && framesGrabbed < MAX_FRAMES) {
 				wc.grabFrame(frame);
 				framesGrabbed++;
