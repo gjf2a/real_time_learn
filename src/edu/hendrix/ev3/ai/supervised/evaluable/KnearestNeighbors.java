@@ -50,18 +50,18 @@ public class KnearestNeighbors implements RobotLearner {
 		return dist;
 	}
 	public Move getMostCommonElement(TreeMap<Number, Move> kClosest){
-		HashMap<Move,Integer> occurances = new HashMap<>();
+		HashMap<Move,Integer> occurences = new HashMap<>();
 		for (Move m: kClosest.values()){
-			if (occurances.containsKey(m)){
-				occurances.put(m, occurances.get(m)+1);
+			if (occurences.containsKey(m)){
+				occurences.put(m, occurences.get(m)+1);
 			}
 			else{
-				occurances.put(m, 1);
+				occurences.put(m, 1);
 			}
 		}
 		int maxValue = 0;
 		Move maxMove = Move.NONE;
-		for (Entry<Move, Integer> m1: occurances.entrySet()){
+		for (Entry<Move, Integer> m1: occurences.entrySet()){
 			if (maxValue < m1.getValue()){
 				maxValue = m1.getValue();
 				maxMove = m1.getKey();
