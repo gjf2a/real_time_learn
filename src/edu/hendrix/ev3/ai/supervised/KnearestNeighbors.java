@@ -1,4 +1,4 @@
-package edu.hendrix.ev3.ai.supervised.evaluable;
+package edu.hendrix.ev3.ai.supervised;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -6,13 +6,12 @@ import java.util.Map.Entry;
 import java.util.TreeMap;
 
 import edu.hendrix.ev3.ai.cluster.yuv.AdaptedYUYVImage;
-import edu.hendrix.ev3.ai.supervised.RobotLearner;
 import edu.hendrix.ev3.remote.Move;
 import edu.hendrix.ev3.ai.cluster.yuv.YUYVDistanceFuncs;
 
 public class KnearestNeighbors implements RobotLearner {
 	private HashMap<Move,ArrayList<AdaptedYUYVImage>> neighbors = new HashMap<>();
-	private int k = 1;
+	private int k = 3;
 
 	
 	public KnearestNeighbors() {
