@@ -119,12 +119,16 @@ public class BoundedSelfOrgCluster<T extends Clusterable<T> & DeepCopyable<T>> i
 		for (String node: Util.debrace(nodeStr)) {
 			Node<T> newNode = new Node<>(node, extractor);
 			nodes.put(newNode.getID(), newNode);
+			nodes2edges.add(new TreeSet<>());
 		}
 	}
 	
 	private void rebuildEdges(String edgeStr) {
 		for (String edge: Util.debrace(edgeStr)) {
-			edges.add(new Edge<T>(edge));
+			Edge<T> newEdge = new Edge<>(edge);
+			edges.add(newEdge);
+			nodes2edges.get(newEdge.getNode1()).add(newEdge);
+			nodes2edges.get(newEdge.getNode2()).add(newEdge);
 		}
 	}
 	
@@ -175,7 +179,10 @@ public class BoundedSelfOrgCluster<T extends Clusterable<T> & DeepCopyable<T>> i
 	private void insert(Node<T> example) {
 		nodes.put(example.getID(), example);
 		Util.assertState(example == nodes.get(example.getID()), "Went to the wrong place");
-		nodes2edges.add(new TreeSet<>());
+		Util.assertState(nodes2edges.size() >= example.getID(), String.format("nodes2edges mismatch! exampleID: %d nodes2edges.size: %d", example.getID(), nodes2edges.size()));
+		if (example.getID() == nodes2edges.size()) {
+			nodes2edges.add(new TreeSet<>());
+		}
 		createEdgesFor(example.getID());
 	}
 

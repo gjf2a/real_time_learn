@@ -69,7 +69,11 @@ abstract public class NetBot {
 	public Move getCurrentMove() {return currentMove;}
 	
 	public void print(String msg) {
-		LCD.drawString(msg + "        ", 0, 4);
+		print(msg, 4);
+	}
+	
+	public void print(String msg, int line) {
+		LCD.drawString(msg + "        ", 0, line);
 	}
 	
 	public void mainLoop() {
@@ -107,14 +111,14 @@ abstract public class NetBot {
 			return new byte[0];
 		} else {
 			sender = ((InetSocketAddress)src).getAddress();
-			Util.assertState(inputBuffer.array().length == inputSize, "Size mismatch on input");
+			// Util.assertState(inputBuffer.array().length == inputSize, "Size mismatch on input");
 			return inputBuffer.array();
 		}
 	}
 	
 	private void transmitReply(byte[] reply) throws IOException {
 		if (sender != null) {
-			Util.assertArgument(reply.length == outputSize, "Size mismatch on output");
+			// Util.assertArgument(reply.length == outputSize, "Size mismatch on output");
 			DatagramPacket info = new DatagramPacket(reply, reply.length, sender, RobotConstants.MSG_PORT);
 			channel.configureBlocking(true);
 			channel.socket().send(info);

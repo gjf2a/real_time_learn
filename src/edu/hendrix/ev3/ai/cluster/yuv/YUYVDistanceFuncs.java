@@ -1,11 +1,14 @@
 package edu.hendrix.ev3.ai.cluster.yuv;
 
+import edu.hendrix.ev3.util.Util;
+
 public class YUYVDistanceFuncs {
 	public static long square(long value) {
 		return value * value;
 	}
 	
 	public static long euclideanAllChannels(AdaptedYUYVImage img1, AdaptedYUYVImage img2) {
+		Util.assertArgument(img1.getWidth() == img2.getWidth() && img1.getHeight() == img2.getHeight(), String.format("Mismatched sizes: (%d,%d) vs (%d,%d)", img1.getWidth(), img1.getHeight(), img2.getWidth(), img2.getHeight()));
 		long ssd = 0;
 		for (int x = 0; x < img1.getWidth(); ++x) {
 			for (int y = 0; y < img1.getHeight(); ++y) {

@@ -1,11 +1,14 @@
-package edu.hendrix.ev3.ai.supervised.evaluable;
+package edu.hendrix.ev3.ai.supervised;
 import libsvm.*;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import edu.hendrix.ev3.ai.cluster.yuv.AdaptedYUYVImage;
-import edu.hendrix.ev3.ai.supervised.RobotLearner;
+import edu.hendrix.ev3.ai.cluster.yuv.YUYVDistanceFuncs;
 import edu.hendrix.ev3.remote.Move;
 
 public class Support_Vector_Machine implements RobotLearner {
@@ -16,17 +19,30 @@ public class Support_Vector_Machine implements RobotLearner {
 	private HashMap<Move,Integer> moveToInt;
 	private boolean trained;
 	private svm_model model;
-	private int shrinkValue = 4;
+	private int shrinkValue = 8;
+	private ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+	private PrintStream temp;
 	// Y' values are conventionally shifted and scaled to the range [16, 235] 
-	private int scaleValue = 219;
-	private int floorValue = 16;
+	private double scaleValue = 255.0;
+	private double gamma, C;
 	public Support_Vector_Machine(){
+		temp = new PrintStream(buffer);
 		intToMove = new HashMap<Integer,Move>();
 		moveToInt = new HashMap<Move,Integer>();
 		fillMaps();
 		images = new ArrayList<AdaptedYUYVImage>();
 		moves = new ArrayList<Move>();
 		model = new svm_model();
+		this.C = 1;
+		this.gamma = 1;
+	}
+	public void setGamma(double x){
+		this.gamma = x;
+		trained = false;
+	}
+	public void setC(double c){
+		this.C = c;
+		trained = false;
 	}
 	private void fillMaps(){
 		int count = 0;
@@ -47,33 +63,46 @@ public class Support_Vector_Machine implements RobotLearner {
 	@Override
 	public Move bestMatchFor(AdaptedYUYVImage img) {
 		if (!trained){
+			PrintStream orig = System.out;
+			System.setOut(temp);
 			model = trainSVM();
+			System.setOut(orig);
 			trained = true;
 		}
 		
 		svm_node[] imageAsNode = imageToNode(img);
+		PrintStream orig = System.out;
+		System.setOut(temp);
 		double answer = svm.svm_predict(model, imageAsNode);
+		System.setOut(orig);
+		if (answer != 0.0){
+			System.out.println(answer);
+		}
 		return intToMove.get((int)answer);
-		// will casting to int cause issues when indexing? 
 		
 	}
 	
+	private svm_node[] imageToNode2(AdaptedYUYVImage img){
+		svm_node[] nodeListOut = new svm_node[images.size()];
+		for (int x = 0; x < images.size(); x++){
+			svm_node node = new svm_node();
+			node.index = x;
+			node.value = YUYVDistanceFuncs.euclideanAllChannels(img, images.get(x));
+			nodeListOut[x] = node;
+		}
+		return nodeListOut;
+	}
 	private svm_node[] imageToNode(AdaptedYUYVImage img){
-		ArrayList<svm_node> nodes = new ArrayList<>();
-		img = img.shrunken(shrinkValue);
+		svm_node[] nodeListOut = new svm_node[img.getWidth() * img.getHeight()];
+		int count = 0;
 		for (int x = 0; x < img.getWidth(); x++){
-			int count = 0;
 			for (int y = 0; y < img.getHeight(); y++){
 				svm_node node = new svm_node();
 				node.index = count;
-				node.value = (double) (img.getY(x, y) - floorValue)/scaleValue;
-				nodes.add(node);
+				node.value = img.getY(x, y)/scaleValue;
+				nodeListOut[count] = node;
 				count++;
 			}
-		}
-		svm_node[] nodeListOut = new svm_node[nodes.size()-1];
-		for (int i = 0; i < nodes.size()-1; i++){
-			nodeListOut[i] = nodes.get(i);
 		}
 		return nodeListOut;
 	}
@@ -99,17 +128,7 @@ public class Support_Vector_Machine implements RobotLearner {
 		problem.l = dataSize;
 		problem.x = new svm_node[dataSize][features];
 		for(int i = 0; i < dataSize; i++){
-			AdaptedYUYVImage image = images.get(i);
-			int count = 0;
-			for (int x = 0; x < images.get(0).getWidth(); x++){
-				for (int y = 0; y < images.get(0).getHeight(); y++){
-					svm_node node = new svm_node();
-					node.index = count;
-					node.value = (double) (image.getY(x, y) - floorValue)/scaleValue;
-					problem.x[i][count] = node;
-					count++;
-				}
-			}
+			problem.x[i] = imageToNode(images.get(i));
 			problem.y[i] = moveToInt.get(moves.get(i));
 		}
 		/* the pdf at http://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf tells us to
@@ -121,10 +140,10 @@ public class Support_Vector_Machine implements RobotLearner {
 		 */
 		svm_parameter param = new svm_parameter();
 	    param.probability = 0;
-	    param.gamma = .01;
+	    param.gamma = this.gamma;
 	    param.nu = 0.5;
 	    param.degree = 10;
-	    param.C = 10;
+	    param.C = this.C;
 	    param.svm_type = svm_parameter.C_SVC;
 	    param.kernel_type = svm_parameter.RBF;       
 	    param.cache_size = 20000;

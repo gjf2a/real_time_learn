@@ -2,8 +2,9 @@ package edu.hendrix.ev3.remote.net.actionselector;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.time.LocalDateTime;
+import java.nio.ByteBuffer;
 
+import org.joda.time.LocalDateTime;
 import edu.hendrix.ev3.ai.cluster.yuv.AdaptedYUYVImage;
 import edu.hendrix.ev3.remote.Move;
 import edu.hendrix.ev3.remote.net.NetBot;
@@ -27,6 +28,7 @@ public class ActionSelectorBot extends NetBot {
 	private Mode mode;
 	private Video video;
 	private byte[] frame;
+	private int clustNum, shrinkNum;
 	
 	public ActionSelectorBot() throws IOException {
 		super(ActionSelectorCommand.SIZE, ActionSelectorReply.SIZE);
@@ -65,7 +67,7 @@ public class ActionSelectorBot extends NetBot {
 			throw new IllegalStateException(ioe.getMessage());
 		}
 	}
-	
+		
 	public AdaptedYUYVImage wrapBytes() {
 		return new AdaptedYUYVImage(frame, RobotConstants.WIDTH, RobotConstants.HEIGHT);
 	}
@@ -78,23 +80,31 @@ public class ActionSelectorBot extends NetBot {
 		
 		if (mode == Mode.LEARNING) {
 			Logger.EV3Log.format("learning; %s", lastMove.toString()); 
+			print("Learning! \nc:" + ai.getClustNum() + ";s:" + ai.getShrinkNum());
 			if (ai != null) {
 				ai.train(wrapBytes());
 			}
 			return new NetBotCommand(lastMove);
-			
+		} else if (mode == Mode.PULSE){
+			Logger.EV3Log.format("sending pulse");
+			byte[] pulse = createPulse();
+			mode = Mode.LEARNING;
+			return new NetBotCommand(lastMove, pulse, false);
 		} else if (mode == Mode.RETRIEVING) {
 			Logger.EV3Log.format("retrieving"); 
 			ActionSelectorReply reply = new ActionSelectorReply(lastTag);
 			for (Duple<LocalDateTime, Integer> name: StampedStorage.getAvailableFor(BSOCController.class)) {
 				reply.addName(name.getFirst(), name.getSecond());
 			}
+			mode = Mode.WAITING;
 			return new NetBotCommand(Move.STOP, reply.toBytes(), false);
 			
 		} else if (mode == Mode.APPLYING) {
 			lastMove = ai.pickMoveFor(wrapBytes());
 			Logger.EV3Log.log("applying " + lastMove);
+			print("APPLYING");
 			return new NetBotCommand(lastMove);
+			
 			
 		} else if (mode == Mode.QUIT) {
 			Logger.EV3Log.log("quitting");
@@ -105,7 +115,15 @@ public class ActionSelectorBot extends NetBot {
 			return new NetBotCommand(Move.STOP);
 		}
 	}
-	
+	private byte[] createPulse(){
+		// the size of the buffer is the -1 + TIME + 1 Mode.Ordinal
+		int size = StampedStorage.DATE_TIME_BYTES + 2;
+		ByteBuffer buffer = ByteBuffer.allocate(size);
+		buffer.put((byte)-1);
+		StampedStorage.putInto(LocalDateTime.now(), buffer);
+		buffer.put((byte)lastMove.ordinal());
+		return buffer.array();		
+	}
 	private void decodeCmd(ActionSelectorCommand cmd) {
 		lastMove = cmd.getMove();
 		lastTag = cmd.getTag();
@@ -114,7 +132,7 @@ public class ActionSelectorBot extends NetBot {
 		if (updated == Mode.STARTING) {
 			ai = new BSOCController(cmd.getNumClusters(), cmd.getShrinkFactor());
 			aiTimestamp = cmd.getStamp();
-			mode = Mode.LEARNING;
+			mode = Mode.WAITING;
 			print("c:" + cmd.getNumClusters() + ";s:" + cmd.getShrinkFactor());
 			resetTimer();
 			Logger.EV3Log.format("Starting: clusters: %d, shrink: %d", cmd.getNumClusters(), cmd.getShrinkFactor());
@@ -126,6 +144,10 @@ public class ActionSelectorBot extends NetBot {
 				} catch (FileNotFoundException e) {
 					Logger.EV3Log.log("Can't open " + cmd.getStamp());
 				}
+			} else if (mode == Mode.LIVE_DEMO){
+				print("Live Demo");
+				Logger.EV3Log.log("Live Demo starting now");
+				mode = Mode.APPLYING;
 			}
 		}
 	}

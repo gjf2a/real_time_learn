@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import edu.hendrix.ev3.ai.bsoc.BoundedSelfOrgCluster;
 import edu.hendrix.ev3.ai.cluster.DistanceFunc;
+import edu.hendrix.ev3.util.Duple;
 import edu.hendrix.ev3.util.Util;
 
 public class ImageBSOC extends BoundedSelfOrgCluster<AdaptedYUYVImage> {
@@ -46,5 +47,10 @@ public class ImageBSOC extends BoundedSelfOrgCluster<AdaptedYUYVImage> {
 	@Override
 	public long distanceToClosestMatch(AdaptedYUYVImage example) {
 		return super.distanceToClosestMatch(example.shrunken(shrinkFactor));
+	}
+	
+	@Override
+	public ArrayList<Duple<Integer,Long>> getNodeRanking(AdaptedYUYVImage example) {
+		return super.getNodeRanking(example.shrunken(shrinkFactor));
 	}
 }

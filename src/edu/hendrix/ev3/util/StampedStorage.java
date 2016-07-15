@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.nio.ByteBuffer;
-import java.time.LocalDateTime;
+import org.joda.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.function.Function;
@@ -24,8 +24,8 @@ public class StampedStorage {
 		return result;
 	}
 	
-	public static void save(Object obj, LocalDateTime when) throws FileNotFoundException {
-		save(obj, decolonify(when, 0));
+	public static void save(Object obj, org.joda.time.LocalDateTime aiTimestamp) throws FileNotFoundException {
+		save(obj, decolonify(aiTimestamp, 0));
 	}
 	
 	public static void revise(Object obj, LocalDateTime when, int suffix) throws FileNotFoundException {
@@ -46,11 +46,13 @@ public class StampedStorage {
 	}
 	
 	public static ArrayList<Duple<LocalDateTime,Integer>> getAvailableFor(Class<?> cl) {
-		File dir = new File(cl.getName());
-		String[] filenames = dir.list();
 		ArrayList<Duple<LocalDateTime,Integer>> result = new ArrayList<>();
-		for (int i = 0; i < filenames.length; i++) {
-			result.add(colonify(filenames[i]));
+		File dir = new File(cl.getName());
+		if (dir.isDirectory()) {
+			String[] filenames = dir.list();
+			for (int i = 0; i < filenames.length; i++) {
+				result.add(colonify(filenames[i]));
+			}
 		}
 		return result;
 	}
@@ -83,22 +85,22 @@ public class StampedStorage {
 	
 	public static void putInto(LocalDateTime stamp, ByteBuffer buffer) {
 		buffer.put((byte)stamp.getDayOfMonth());
-		buffer.put((byte)stamp.getMonthValue());
-		buffer.put((byte)stamp.getHour());
-		buffer.put((byte)stamp.getMinute());
-		buffer.put((byte)stamp.getSecond());
+		buffer.put((byte)stamp.getMonthOfYear());
+		buffer.put((byte)stamp.getHourOfDay());
+		buffer.put((byte)stamp.getMinuteOfHour());
+		buffer.put((byte)stamp.getSecondOfMinute());
 		buffer.putInt(stamp.getYear());
-		buffer.putInt(stamp.getNano());
-	}
-	
-	public static LocalDateTime getFrom(ByteBuffer buffer) {
-		byte day = buffer.get();
-		byte month = buffer.get();
-		byte hour = buffer.get();
-		byte minute = buffer.get();
-		byte second = buffer.get();
-		int year = buffer.getInt();
-		int nano = buffer.getInt();
-		return LocalDateTime.of(year, month, day, hour, minute, second, nano);
-	}
+		buffer.putInt(stamp.getMillisOfSecond());
+    }
+
+    public static LocalDateTime getFrom(ByteBuffer buffer) {
+        byte day = buffer.get();
+        byte month = buffer.get();
+        byte hour = buffer.get();
+        byte minute = buffer.get();
+        byte second = buffer.get();
+        int year = buffer.getInt();
+        int milli = buffer.getInt();
+        return new LocalDateTime(year, month, day, hour, minute, second, milli);
+    }
 }

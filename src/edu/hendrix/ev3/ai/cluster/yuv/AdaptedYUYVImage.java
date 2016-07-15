@@ -123,7 +123,8 @@ public class AdaptedYUYVImage extends YUYVImage implements ProcessableImage<Adap
 	
 	@Override
 	public AdaptedYUYVImage shrunken(int shrinkFactor) {
-		Util.assertArgument(canShrinkBy(shrinkFactor), "Uneven shrinkage: " + shrinkFactor);
+		Util.assertArgument(canShrinkBy(shrinkFactor), "Uneven shrinkage: " + shrinkFactor + " (" + getWidth() + "," + getHeight() + ")");
+		 
 		AdaptedYUYVImage shrunk = new AdaptedYUYVImage(getWidth() / shrinkFactor, getHeight() / shrinkFactor);
 		int p = 0;
 		for (int i = 0; i < pix.length; i+=4) {

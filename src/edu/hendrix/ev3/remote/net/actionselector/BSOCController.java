@@ -12,8 +12,11 @@ import edu.hendrix.ev3.util.Util;
 public class BSOCController {
 	private ImageBSOC bsoc;
 	private FixedSizeArray<Move> moves;
+	private int clustNum, shrinkNum;
 	
 	public BSOCController(int size, int shrinkFactor) {
+		clustNum = size;
+		shrinkNum = shrinkFactor;
 		bsoc = new ImageBSOC(size, shrinkFactor);
 		moves = FixedSizeArray.makeImmutableType(size);
 		resetMoves(moves);
@@ -109,4 +112,6 @@ public class BSOCController {
  		}
 		return Move.NONE;
 	}
+	public int getShrinkNum(){return shrinkNum;}
+	public int getClustNum(){return clustNum;}
 }
