@@ -1,18 +1,22 @@
 package edu.hendrix.ev3.remote.net.actionselector;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import edu.hendrix.ev3.ai.cluster.yuv.AdaptedYUYVImage;
 import edu.hendrix.ev3.ai.cluster.yuv.ImageBSOC;
 import edu.hendrix.ev3.remote.Move;
 import edu.hendrix.ev3.util.Duple;
+import edu.hendrix.ev3.util.EnumHistogram;
 import edu.hendrix.ev3.util.FixedSizeArray;
+import edu.hendrix.ev3.util.Logger;
 import edu.hendrix.ev3.util.Util;
 
 public class BSOCController {
 	private ImageBSOC bsoc;
 	private FixedSizeArray<Move> moves;
 	private int clustNum, shrinkNum;
+	private HashMap<Integer, EnumHistogram<Move>> nodes;
 	
 	public BSOCController(int size, int shrinkFactor) {
 		clustNum = size;
@@ -20,6 +24,7 @@ public class BSOCController {
 		bsoc = new ImageBSOC(size, shrinkFactor);
 		moves = FixedSizeArray.makeImmutableType(size);
 		resetMoves(moves);
+		nodes = new HashMap<Integer, EnumHistogram<Move>>();
 	}
 	
 	private static void resetMoves(FixedSizeArray<Move> moves) {
@@ -100,16 +105,31 @@ public class BSOCController {
 	public void assignMoveFor(int node, Move m) {
 		if (nodeExists(node)) {
 			moves.put(node, m);
+			updateNodes(node, m);
+		}
+	}
+	
+	private void updateNodes(int node, Move m){
+		if (nodes.containsKey(node)){
+			nodes.get(node).bump(m);
+		} else {
+			EnumHistogram<Move> value = new EnumHistogram<Move>(Move.class);
+			value.bump(m);
+			nodes.put(node,value);
 		}
 	}
 	
 	public Move pickMoveFor(AdaptedYUYVImage input) {
+		Logger.EV3Log.log("input size" + bsoc.getNodeRanking(input).size());
 		for (Duple<Integer,Long> candidate: bsoc.getNodeRanking(input)) {
-			Move result = getMoveFor(candidate.getFirst());
+			Move result = nodes.get(candidate.getFirst()).getHighestCounted();
+//			Move result = getMoveFor(candidate.getFirst());
+			Logger.EV3Log.log("getMoveFor() result: " + result.name());
 			if (result != Move.NONE) {
 				return result;
 			}
  		}
+		Logger.EV3Log.log("Nothing found");
 		return Move.NONE;
 	}
 	public int getShrinkNum(){return shrinkNum;}

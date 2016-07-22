@@ -19,11 +19,12 @@ abstract public class NetBot {
 	private DatagramChannel channel;
 	private ByteBuffer inputBuffer;
 	private int inputSize, outputSize;
-	private boolean quit = false;
+	private boolean quit, livefeed = false;
 	private Move currentMove;
 	private InetAddress sender;
 	private int cycles;
 	private long startTime;
+	
 	
 	public NetBot(int incomingSize, int outgoingSize) throws IOException {
 		channel = DatagramChannel.open();
@@ -76,6 +77,9 @@ abstract public class NetBot {
 		LCD.drawString(msg + "        ", 0, line);
 	}
 	
+	public void setLivefeed(boolean b){
+		this.livefeed = b;
+	}
 	public void mainLoop() {
 		print("Setting up");
 		setup();
@@ -88,11 +92,16 @@ abstract public class NetBot {
 				byte[] incoming = resolveMessages();
 				NetBotCommand response = selectMoveAndReply(incoming);
 				currentMove = response.getMove();
+				print(currentMove.name(),5);
 				Mover.move(currentMove);
 				if (response.hasMessage()) {
 					transmitReply(response.getMessage());
 				}
+				if(livefeed){
+					sendCurrentMove();
+				}
 				quit = response.shouldQuit();
+				
 			}
 			Mover.move(Move.STOP);
 			logFPS();
@@ -102,7 +111,12 @@ abstract public class NetBot {
 			exc.printStackTrace();
 		}
 	}
-	
+	private void sendCurrentMove() throws IOException{
+		byte[] b = new byte[2];
+		b[0] = -2;
+		b[0] = (byte) currentMove.ordinal();
+		transmitReply(b);
+	}
 	private byte[] resolveMessages() throws IOException {
 		inputBuffer.clear();
 		channel.configureBlocking(false);

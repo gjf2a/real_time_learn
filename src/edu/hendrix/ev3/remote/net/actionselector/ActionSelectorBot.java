@@ -79,18 +79,26 @@ public class ActionSelectorBot extends NetBot {
 		}
 		
 		if (mode == Mode.LEARNING) {
-			Logger.EV3Log.format("learning; %s", lastMove.toString()); 
-			print("Learning! \nc:" + ai.getClustNum() + ";s:" + ai.getShrinkNum());
-			if (ai != null) {
-				ai.train(wrapBytes());
+			this.setLivefeed(false);
+			if (lastMove != Move.STOP){
+				this.setLivefeed(true);
+				Logger.EV3Log.format("learning; %s", lastMove.toString()); 
+				print("Learning! \nc:" + ai.getClustNum() + ";s:" + ai.getShrinkNum());
+				if (ai != null) {
+					int node = ai.train(wrapBytes());
+					ai.assignMoveFor(node, getCurrentMove());
+				}
 			}
+			
 			return new NetBotCommand(lastMove);
 		} else if (mode == Mode.PULSE){
+			this.setLivefeed(false);
 			Logger.EV3Log.format("sending pulse");
 			byte[] pulse = createPulse();
 			mode = Mode.LEARNING;
 			return new NetBotCommand(lastMove, pulse, false);
 		} else if (mode == Mode.RETRIEVING) {
+			this.setLivefeed(false);
 			Logger.EV3Log.format("retrieving"); 
 			ActionSelectorReply reply = new ActionSelectorReply(lastTag);
 			for (Duple<LocalDateTime, Integer> name: StampedStorage.getAvailableFor(BSOCController.class)) {
@@ -100,6 +108,7 @@ public class ActionSelectorBot extends NetBot {
 			return new NetBotCommand(Move.STOP, reply.toBytes(), false);
 			
 		} else if (mode == Mode.APPLYING) {
+			this.setLivefeed(true);
 			lastMove = ai.pickMoveFor(wrapBytes());
 			Logger.EV3Log.log("applying " + lastMove);
 			print("APPLYING");
@@ -107,6 +116,7 @@ public class ActionSelectorBot extends NetBot {
 			
 			
 		} else if (mode == Mode.QUIT) {
+			this.setLivefeed(false);
 			Logger.EV3Log.log("quitting");
 			return NetBotCommand.makeQuit();
 			
