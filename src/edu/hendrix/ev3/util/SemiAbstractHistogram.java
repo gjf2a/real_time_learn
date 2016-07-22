@@ -23,7 +23,10 @@ public class SemiAbstractHistogram<T, M extends Map<T,Integer>> implements Itera
 	}
 	
 	public void bump(T t) {
-		setCountFor(t, getCountFor(t) + 1);
+		if (!counts.containsKey(t)) {
+			counts.put(t, 0);
+		}
+		counts.put(t, counts.get(t) + 1);
 	}
 	
 	public int getNumKeys() {return counts.size();}
@@ -91,11 +94,5 @@ public class SemiAbstractHistogram<T, M extends Map<T,Integer>> implements Itera
 			}
 		}
 		return result;
-	}
-	
-	public void addAllFrom(SemiAbstractHistogram<T,M> src) {
-		for (Entry<T, Integer> entry: src) {
-			setCountFor(entry.getKey(), entry.getValue() + getCountFor(entry.getKey()));
-		}
 	}
 }
