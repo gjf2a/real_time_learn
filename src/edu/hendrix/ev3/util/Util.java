@@ -43,7 +43,7 @@ public class Util {
 	/**
 	 * Purely integer exponentiation
 	 */
-	public static int pow(int base, int exp) {
+	public static long pow(long base, int exp) {
 		assertArgument(exp >= 0, "No negative exponents");
 		if (exp == 0) {
 			return 1;
@@ -155,5 +155,9 @@ public class Util {
 		}
 		if (current.length() > 0) result.add(current.toString());
 		return result;
+	}
+
+	public static double angleDiff(double theta1, double theta2) {
+		return Math.atan2(Math.sin(theta1 - theta2), Math.cos(theta1 - theta2));
 	}
 }

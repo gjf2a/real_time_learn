@@ -26,7 +26,7 @@ public class TreeBSOC<T extends Clusterable<T> & DeepCopyable<T>> implements Clu
 		
 		top = new BoundedSelfOrgCluster<>(degree, dist);
 		for (int i = 1; i < levels; i++) {
-			FixedSizeArray<BoundedSelfOrgCluster<T>> array = FixedSizeArray.make(Util.pow(degree, i));
+			FixedSizeArray<BoundedSelfOrgCluster<T>> array = FixedSizeArray.make((int)Util.pow(degree, i));
 			tree.add(array);
 			for (int j = 0; j < array.capacity(); j++) {
 				array.add(new BoundedSelfOrgCluster<>(degree, dist));

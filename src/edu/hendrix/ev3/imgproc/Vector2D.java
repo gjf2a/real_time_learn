@@ -1,5 +1,7 @@
 package edu.hendrix.ev3.imgproc;
 
+import java.util.ArrayList;
+
 public class Vector2D {
 	private double x, y;
 	private double r, theta;
@@ -40,6 +42,10 @@ public class Vector2D {
 	public double R() {return r;}
 	public double theta() {return theta;}
 	
+	public Vector2D unit() {
+		return new Vector2D(Math.cos(theta), Math.sin(theta));
+	}
+	
 	public Vector2D add(Vector2D other) {
 		return new Vector2D(this.x + other.x, this.y + other.y);
 	}
@@ -56,5 +62,21 @@ public class Vector2D {
 			denom += 1;
 		}
 		return sum.scalarMultiply(1.0 / (double)denom);
+	}
+	
+	public static double rMean(Iterable<Vector2D> vecs) {
+		double rSum = 0.0;
+		int numR = 0;
+		for (Vector2D v: vecs) {
+			rSum += v.R();
+			numR += 1;
+		}
+		return rSum / numR;
+	}
+	
+	public static double thetaMean(Iterable<Vector2D> vecs) {
+		ArrayList<Vector2D> units = new ArrayList<>();
+		for (Vector2D v: vecs) {units.add(v.unit());}
+		return mean(units).theta();
 	}
 }

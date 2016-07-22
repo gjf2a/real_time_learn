@@ -3,19 +3,19 @@ package edu.hendrix.ev3.imgproc;
 import java.util.ArrayList;
 import java.util.BitSet;
 import java.util.LinkedHashMap;
+import java.util.function.BiConsumer;
 
 import edu.hendrix.ev3.util.DeepCopyable;
 import edu.hendrix.ev3.util.StableMatchPrefs;
-import edu.hendrix.ev3.util.Util;
 
 public class BitImage implements ImageOutline, DeepCopyable<BitImage> {
 	private BitSet pixels;
 	private int width, height;
 	
 	public BitImage(BitImage src) {
-		this.pixels = src.pixels.get(0, width*height);
 		this.width = src.width;
 		this.height = src.height;
+		this.pixels = src.pixels.get(0, width*height);
 	}
 	
 	public BitImage(int width, int height) {
@@ -25,19 +25,16 @@ public class BitImage implements ImageOutline, DeepCopyable<BitImage> {
 		this.height = height;
 	}
 	
-	public BitImage getSubimage(int x1, int y1, int x2, int y2) {
-		Util.assertArgument(x1 <= x2 && y1 <= y2, "Out-of-order parameters");
-		x1 = Math.max(0, x1);
-		x2 = Math.min(getWidth() - 1, x2);
-		y1 = Math.max(0, y1);
-		y2 = Math.min(getHeight() - 1, y2);
-		BitImage result = new BitImage(x2 - x1 + 1, y2 - y1 + 1);
-		for (int y = y1; y <= y2; y++) {
-			for (int x = x1; x <= x2; x++) {
-				if (isSet(x, y)) result.set(x - x1, y - y1);
+	public void applyToSubimage(int x, int y, int width, int height, BiConsumer<Integer,Integer> func) {
+		int x1 = Math.max(0, x);
+		int x2 = Math.min(getWidth() - 1, x + width - 1);
+		int y1 = Math.max(0, y);
+		int y2 = Math.min(getHeight() - 1, y + height - 1);
+		for (int xi = x1; xi <= x2; xi++) {
+			for (int yi = y1; yi <= y2; yi++) {
+				if (isSet(xi, yi)) {func.accept(xi, yi);}
 			}
 		}
-		return result;
 	}
 	
 	@Override
@@ -50,6 +47,21 @@ public class BitImage implements ImageOutline, DeepCopyable<BitImage> {
 			result.append("\n");
 		}
 		return result.toString();
+	}
+	
+	@Override
+	public int hashCode() {
+		return pixels.hashCode();
+	}
+	
+	@Override
+	public boolean equals(Object other) {
+		if (other instanceof BitImage) {
+			BitImage that = (BitImage)other;
+			return this.width == that.width && this.height == that.height && this.pixels.equals(that.pixels);
+		} else {
+			return false;
+		}
 	}
 	
 	public int getWidth() {return width;}
@@ -98,39 +110,28 @@ public class BitImage implements ImageOutline, DeepCopyable<BitImage> {
 		return new BitImage(this);
 	}
 	
-	@Override
-	public boolean equals(Object other) {
-		if (other instanceof BitImage) {
-			BitImage that = (BitImage)other;
-			return this.width == that.width && this.height == that.height && this.pixels.equals(that.pixels);
-		} else {
-			return false;
-		}
-	}
-	
 	public static LinkedHashMap<Feature,Feature> getStableMatches(BitImage img1, BitImage img2) {
 		return StableMatchPrefs.makeStableMatches(img1.allSet(), img2.allSet(), (m, w) -> (int)(Feature.euclideanDistanceSquared(m, w)));
 	}
 	
 	public static LinkedHashMap<Feature,Feature> getGreedyMatches(BitImage img1, BitImage img2, int searchBound) {
+		LinkedHashMap<Feature,Long> bestDistances = new LinkedHashMap<>();
 		LinkedHashMap<Feature,Feature> result = new LinkedHashMap<>();
-		for (Feature f1: img1.allSet()) {
-			Feature best = null;
-			long distance = Long.MAX_VALUE;		
-			Feature start = new Feature(Math.max(0, f1.X() - searchBound), Math.max(0, f1.Y() - searchBound));
-			BitImage sub = img2.getSubimage(start.X(), start.Y(), f1.X() + searchBound, f1.Y() + searchBound);
-			for (Feature f2: sub.allSet()) {
-				Feature offset = f2.add(start);
-				long f2distance = Feature.euclideanDistanceSquared(f1, offset);
-				if (best == null || f2distance < distance) {
-					best = offset;
-					distance = f2distance;
-				}
+		visitNeighbors(img1, img2, searchBound, (f1, f2) -> {
+			long f2distance = Feature.euclideanDistanceSquared(f1, f2);
+			if (!bestDistances.containsKey(f1) || f2distance < bestDistances.get(f1)) {
+				result.put(f1, f2);
+				bestDistances.put(f1, f2distance);
 			}
-			if (best != null) {
-				result.put(f1, best);
-			}
-		}
+		});
 		return result;
+	}
+	
+	public static void visitNeighbors(BitImage img1, BitImage img2, int searchBound, BiConsumer<Feature,Feature> neighborFunc) {
+		for (Feature f1: img1.allSet()) {
+			img2.applyToSubimage(f1.X() - searchBound/2, f1.Y() - searchBound/2, searchBound, searchBound, (x,y) -> {
+				neighborFunc.accept(f1, new Feature(x, y));
+			});
+		}
 	}
 }

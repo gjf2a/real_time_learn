@@ -1,7 +1,10 @@
 package edu.hendrix.ev3.gui.videoview;
 
+import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.concurrent.BlockingQueue;
+import java.util.function.Function;
+import java.util.function.BiFunction;
 import java.util.function.Consumer;
 import java.util.function.IntSupplier;
 import java.util.concurrent.ArrayBlockingQueue;
@@ -19,10 +22,14 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.Slider;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 import edu.hendrix.ev3.ai.cluster.EdgeImage;
 import edu.hendrix.ev3.ai.cluster.yuv.AdaptedYUYVImage;
+import edu.hendrix.ev3.imgproc.BitImage;
+import edu.hendrix.ev3.imgproc.BitImageClusters;
 import edu.hendrix.ev3.imgproc.FAST;
 import edu.hendrix.ev3.imgproc.FeatureFlow;
 import edu.hendrix.ev3.imgproc.Normal_BRIEF_256_31_a;
@@ -30,6 +37,9 @@ import edu.hendrix.ev3.imgproc.PointPairList;
 import edu.hendrix.ev3.imgproc.RANSAC;
 import edu.hendrix.ev3.imgproc.Vector2D;
 import edu.hendrix.ev3.util.Duple;
+import edu.hendrix.ev3.util.Stdev;
+import edu.hendrix.ev3.util.StdevType;
+import edu.hendrix.ev3.util.Util;
 
 public class VideoViewController {
 	public static final int NUM_FEATURES = 500;
@@ -68,6 +78,9 @@ public class VideoViewController {
 	TextField messages;
 	
 	@FXML
+	TextField differences;
+	
+	@FXML
 	Button animate;
 	
 	@FXML
@@ -80,19 +93,10 @@ public class VideoViewController {
 	ChoiceBox<Integer> shrinkAmount;
 	
 	@FXML
-	CheckBox viewEdges;
-	
-	@FXML
 	CheckBox viewFAST;
 	
 	@FXML
 	CheckBox filterFAST;
-	
-	@FXML
-	CheckBox viewStableFlow;
-	
-	@FXML
-	CheckBox viewGreedyFlow;
 	
 	@FXML
 	CheckBox viewBriefFlow;
@@ -102,6 +106,33 @@ public class VideoViewController {
 	
 	@FXML
 	CheckBox viewRANSACFlow;
+	
+	@FXML
+	CheckBox viewBriefWindow;
+	
+	@FXML
+	CheckBox filterMagnitudes;
+	
+	@FXML
+	CheckBox filterDistances;
+	
+	@FXML
+	CheckBox filterVectors;
+	
+	@FXML
+	CheckBox filterNeighbors;
+	
+	@FXML
+	RadioButton fastFilter;
+	
+	@FXML
+	RadioButton fastCluster1;
+	
+	@FXML
+	CheckBox distanceDiscount;
+	
+	@FXML
+	Button findAverageDifferences;
 	
 	@FXML
 	Label thresholdValue;
@@ -142,6 +173,31 @@ public class VideoViewController {
 			shrinkAmount.getItems().add(i);
 		}
 		shrinkAmount.getSelectionModel().select(0);
+		
+		findAverageDifferences.setOnAction(event -> {
+			System.out.println("starting...");
+			ArrayList<Double> magDiffs = new ArrayList<>();
+			ArrayList<Double> thetaDiffs = new ArrayList<>();
+			for (int frame = 2; frame < examples.size(); frame++) {
+				if (frame % 10 == 0) System.out.println("Frame: " + frame);
+				FeatureFlow ff = flowProc(frame, (prev, img1) -> briefFlow(prev, img1));
+				FeatureFlow old = flowProc(frame - 1, (prev, img1) -> briefFlow(prev, img1));
+				if (ff.vectors().size() > 0 && old.vectors().size() > 0) {
+					Vector2D mean = Vector2D.mean(ff.vectors());
+					Vector2D oldMean = Vector2D.mean(old.vectors());
+					magDiffs.add(Math.abs(mean.R() - oldMean.R()));
+					thetaDiffs.add(Math.abs(Util.angleDiff(mean.theta(), oldMean.theta())));
+				}
+			}
+			Stdev magStats = new Stdev(magDiffs, StdevType.POPULATION);
+			Stdev thetaStats = new Stdev(thetaDiffs, StdevType.POPULATION);
+			differences.setText(String.format("Mag: %s Theta: %s", magStats.toString(), thetaStats.toString()));
+		});
+		
+		ToggleGroup fastGroup = new ToggleGroup();
+		fastGroup.getToggles().add(fastFilter);
+		fastGroup.getToggles().add(fastCluster1);
+		fastFilter.setSelected(true);
 	}
 	
 	void setUpChoice(ChoiceBox<String> choices, String[] src) {
@@ -240,43 +296,96 @@ public class VideoViewController {
 		RenderList result = new RenderList();
 		AdaptedYUYVImage img = basicProc(current);
 		
-		if (viewEdges != null && viewEdges.isSelected()) {
-			img = applyEdgeProcessing(img);
-		}
-		
 		result.add(new AdaptedYUYVRenderer(img));
 		
-		if (current > 0 && viewBriefFlow.isSelected()) {
-			AdaptedYUYVImage prev = basicProc(current - 1);
-			FeatureFlow ff = FeatureFlow.makePatchMatches(patcher, 500, prev, img);
-			ff.keepOnly(1);
-			result.add(new FlowRenderer(prev, ff));
-			messages.setText(Vector2D.mean(ff.vectors()).toString());
-		} else if (current > 0 && viewRANSACFlow.isSelected()) {
-			AdaptedYUYVImage prev = basicProc(current - 1);
-			FeatureFlow ff = FeatureFlow.makePatchMatches(patcher, 500, prev, img);
-			ff.filterWith(map -> RANSAC.filter(map, 100, 7, 5.0, 10));
-			result.add(new FlowRenderer(prev, ff));
-			Vector2D mean = Vector2D.mean(ff.vectors());
-			messages.setText(String.format("Mean:(%5.2f,%5.2f) (%d features)", mean.R(), mean.theta(), ff.asMap().size()));
-		}
-		else if (current > 0 && (viewStableFlow.isSelected() || viewGreedyFlow.isSelected())) {
-			AdaptedYUYVImage prev = basicProc(current - 1);
-			FAST cf = FAST.nFeatures(img, NUM_FEATURES);
-			FAST pf = FAST.nFeatures(prev, NUM_FEATURES);
-			FeatureFlow ff = viewStableFlow.isSelected() ? FeatureFlow.makeStableFAST(pf, cf) : FeatureFlow.makeGreedyFAST(pf, cf);
-			ff.keepOnly(1);
-			result.add(new FlowRenderer(prev, ff));
-			messages.setText(Vector2D.mean(ff.vectors()).toString());
-		}
+		if (current > 0 && (viewBriefWindow.isSelected() || viewBriefFlow.isSelected() || viewRANSACFlow.isSelected())) {
+			result = flowViewer(current, (prev, img1) -> briefFlow(prev, img1));
+		} 
 		else if (viewFAST.isSelected()) {
-			FAST features = new FAST(img.getWidth(), img.getHeight());
-			features.scalePyramid(img);
+			FAST features = new FAST(img);
 			if (filterFAST.isSelected()) {
 				features.retainBestFeatures(img, NUM_FEATURES);
 			}
 			result.add(new HighlightRenderer(features));
 		}
+		return result;
+	}
+
+	Function<AdaptedYUYVImage,BitImage> getFeatureFinder() {
+		if (filterFAST.isSelected()) {
+			if (fastFilter.isSelected()) {
+				return img -> FAST.nFeatures(img, 500);
+			} else if (fastCluster1.isSelected()) {
+				return img -> {
+					FAST features = new FAST(img);
+					BitImageClusters bic = new BitImageClusters(features);
+					bic.combineAllZones(4);
+					return bic.getBitImage();
+				};
+			} else {
+				throw new IllegalStateException("No feature finder!");
+			}
+		} else {
+			return img -> new FAST(img);
+		}
+	}
+
+	FeatureFlow briefFlow(AdaptedYUYVImage prev, AdaptedYUYVImage img1) {
+		if (viewBriefWindow.isSelected()) {
+			FeatureFlow ff = FeatureFlow.makePatchMatches(getFeatureFinder(), patcher, prev, img1, 30);
+			filterFlow(ff);
+			return ff;
+		} else {
+			FeatureFlow ff = distanceDiscount.isSelected() 
+					? FeatureFlow.makePatchMatches2(getFeatureFinder(), patcher, prev, img1)
+					: FeatureFlow.makePatchMatches(getFeatureFinder(), patcher, prev, img1);
+			if (viewBriefFlow.isSelected()) {
+				filterFlow(ff);
+			} else if (viewRANSACFlow.isSelected()) {
+				ff.filterWith(map -> RANSAC.filter(map, 100, 7, 5.0, 10));
+			}
+			return ff;
+		}
+	}
+	
+	public static final double FILTER_STDEVS = 1.0;
+	
+	void filterFlow(FeatureFlow ff) {
+		if (filterMagnitudes.isSelected()) ff.keepOnlyMagnitude(FILTER_STDEVS);
+		if (filterDistances.isSelected()) ff.keepOnlyDistance(FILTER_STDEVS);
+		if (filterVectors.isSelected()) ff.keepOnlyVectors(FILTER_STDEVS);		
+		if (filterNeighbors.isSelected()) {
+			ff.neighborFilterWith(40, (value, rMean, thetaMean) -> {
+				double v2mRatio = value.R() / rMean;
+				double angleDiff = Util.angleDiff(value.theta(), thetaMean);
+				return v2mRatio < 2.0 && angleDiff < Math.PI/12;
+			});
+		}
+	}
+	
+	FeatureFlow flowProc(int frame, BiFunction<AdaptedYUYVImage,AdaptedYUYVImage,FeatureFlow> flower) {
+		Util.assertArgument(frame > 0 && frame < examples.size(), "Bad frame index " + frame);
+		AdaptedYUYVImage prev = basicProc(frame - 1);
+		AdaptedYUYVImage img = basicProc(frame);
+		return flower.apply(prev, img);
+	}
+	
+	RenderList flowViewer(int frame, BiFunction<AdaptedYUYVImage,AdaptedYUYVImage,FeatureFlow> flower) {
+		FeatureFlow ff = flowProc(frame, flower);
+		Vector2D mean = Vector2D.mean(ff.vectors());
+		messages.setText(String.format("Mean:(%5.2f,%5.2f) Sep:(%5.2f,%5.2f) (%d features)", mean.R(), mean.theta(), Vector2D.rMean(ff.vectors()), Vector2D.thetaMean(ff.vectors()), ff.asMap().size()));
+		
+		if (frame > 1) {
+			FeatureFlow oldFF = flowProc(frame - 1, flower);
+			Vector2D oldMean = Vector2D.mean(oldFF.vectors());
+			differences.setText(String.format("MeanDiff:(%5.2f,%5.2f)", Math.abs(oldMean.R() - mean.R()), Math.abs(Util.angleDiff(oldMean.theta(), mean.theta()))));
+		} else {
+			differences.setText("");
+		}
+		
+		RenderList result = new RenderList();
+		result.add(new AdaptedYUYVRenderer(basicProc(frame)));
+		result.add(new FlowRenderer(basicProc(frame - 1), ff));
 		return result;
 	}
 	

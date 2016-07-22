@@ -30,12 +30,18 @@
                </children>
             </HBox>
             <TextField fx:id="messages" />
+            <TextField fx:id="differences" />
          </children>
       </VBox>
    </bottom>
    <top>
       <VBox BorderPane.alignment="CENTER">
          <children>
+            <HBox>
+               <children>
+                  <Button fx:id="findAverageDifferences" mnemonicParsing="false" text="Find Average Differences" />
+               </children>
+            </HBox>
             <HBox>
                <children>
                   <Button fx:id="reset" mnemonicParsing="false" text="Reset" />
@@ -55,19 +61,34 @@
             <HBox>
                <children>
                   <CheckBox fx:id="viewSmoothing" mnemonicParsing="false" onAction="#renderCurrent" text="Smoothing" />
-                  <CheckBox fx:id="viewEdges" mnemonicParsing="false" onAction="#renderCurrent" text="Edges" />
                   <CheckBox fx:id="viewFAST" mnemonicParsing="false" onAction="#renderCurrent" text="FAST" />
                   <CheckBox fx:id="filterFAST" mnemonicParsing="false" onAction="#renderCurrent" text="Filter" />
                </children>
             </HBox>
             <HBox>
                <children>
-                  <CheckBox fx:id="viewStableFlow" mnemonicParsing="false" text="Stable Flow" />
-                  <CheckBox fx:id="viewGreedyFlow" mnemonicParsing="false" text="Greedy Flow" />
-                  <CheckBox fx:id="viewBriefFlow" mnemonicParsing="false" text="BRIEF Flow" />
+                  <RadioButton fx:id="fastFilter" mnemonicParsing="false" text="FAST Shi-Thomasi" />
+                  <RadioButton fx:id="fastCluster1" mnemonicParsing="false" text="FAST Cluster 1" />
                </children>
             </HBox>
-            <CheckBox fx:id="viewRANSACFlow" mnemonicParsing="false" text="RANSAC" />
+            <HBox>
+               <children>
+                  <Label text="BRIEF" />
+                  <CheckBox fx:id="viewBriefWindow" mnemonicParsing="false" text="Window" />
+                  <CheckBox fx:id="viewRANSACFlow" mnemonicParsing="false" text="RANSAC" />
+                  <CheckBox fx:id="viewBriefFlow" mnemonicParsing="false" text="Flow" />
+                  <CheckBox fx:id="distanceDiscount" mnemonicParsing="false" text="Distance Discount" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Filter" />
+                  <CheckBox fx:id="filterMagnitudes" mnemonicParsing="false" text="Magnitude" />
+                  <CheckBox fx:id="filterDistances" mnemonicParsing="false" text="Distance" />
+                  <CheckBox fx:id="filterVectors" mnemonicParsing="false" text="Vectors" />
+                  <CheckBox fx:id="filterNeighbors" mnemonicParsing="false" text="Neighbors" />
+               </children>
+            </HBox>
          </children>
       </VBox>
    </top>

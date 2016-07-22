@@ -5,8 +5,12 @@ import java.util.BitSet;
 public class Patch {
 	private BitSet descriptor;
 	
-	public Patch(BitSet bits) {
+	Patch(BitSet bits) {
 		this.descriptor = (BitSet)bits.clone();
+	}
+	
+	public long maxDistance() {
+		return descriptor.size();
 	}
 	
 	public int distance(Patch other) {

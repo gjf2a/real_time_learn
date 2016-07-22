@@ -82,4 +82,10 @@ public class UtilTest {
 		assertEquals(2187, Util.pow(3, 7));
 		assertEquals(6561, Util.pow(3, 8));
 	}
+	
+	@Test
+	public void bigPowTest() {
+		assertEquals(2147483648L, Util.pow(2, 31));
+		assertEquals(4294967296L, Util.pow(2, 32));
+	}
 }

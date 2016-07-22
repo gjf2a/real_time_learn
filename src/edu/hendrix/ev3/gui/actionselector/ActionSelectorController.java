@@ -1,7 +1,5 @@
 package edu.hendrix.ev3.gui.actionselector;
 
-import java.time.LocalDateTime;
-
 import edu.hendrix.ev3.ai.cluster.yuv.AdaptedYUYVImage;
 import edu.hendrix.ev3.gui.Quittable;
 import edu.hendrix.ev3.remote.Move;
@@ -15,6 +13,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import java.util.ArrayList;
+
+import org.joda.time.LocalDateTime;
 
 public class ActionSelectorController implements Quittable {
 	@FXML

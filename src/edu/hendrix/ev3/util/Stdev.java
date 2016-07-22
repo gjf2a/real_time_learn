@@ -19,8 +19,13 @@ public class Stdev {
 		stdev = Math.sqrt(sum / type.varianceDenom(count));
 	}
 	
+	@Override
+	public String toString() {
+		return String.format("%5.2f +/- %5.2f", mean, stdev);
+	}
+	
 	public double getMean() {return mean;}
-	public double getPopStdev() {return stdev;}
+	public double getStdev() {return stdev;}
 	
 	public boolean within(double value, double numStdevs) {
 		double lo = mean - stdev * numStdevs;

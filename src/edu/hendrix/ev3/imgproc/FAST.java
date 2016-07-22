@@ -22,16 +22,14 @@ public class FAST extends BitImage {
 					new Feature(0, -3), new Feature(-1, -3), new Feature(-2, -2), new Feature(-3, -1),
 					new Feature(-3, 0), new Feature(-3, 1), new Feature(-2, 2), new Feature(-1, 3)};
 	
-	public static <T extends ProcessableImage<T>> FAST nFeatures(ProcessableImage<T> img, int n) {
-		FAST features = new FAST(img.getWidth(), img.getHeight());
-		features.scalePyramid(img);
+	public static <T extends ProcessableImage<T>> FAST nFeatures(T img, int n) {
+		FAST features = new FAST(img);
 		features.retainBestFeatures(img, n);
 		return features;
 	}
 	
-	public static <T extends ProcessableImage<T>> FAST nClusters(ProcessableImage<T> img, int n) {
-		FAST features = new FAST(img.getWidth(), img.getHeight());
-		features.scalePyramid(img);
+	public static <T extends ProcessableImage<T>> FAST nClusters(T img, int n) {
+		FAST features = new FAST(img);
 		features.clusterFeatures(img, n);
 		return features;
 	}
@@ -44,11 +42,12 @@ public class FAST extends BitImage {
 		return total;
 	}
 	
-	public FAST(int width, int height) {
-		super(width, height);
+	public <T extends ProcessableImage<T>> FAST(T img) {
+		super(img.getWidth(), img.getHeight());
+		scalePyramid(img);
 	}
 	
-	public <T extends ProcessableImage<T>> void scalePyramid(ProcessableImage<T> img) {
+	private <T extends ProcessableImage<T>> void scalePyramid(T img) {
 		int scale = 1;
 		while (img.canShrinkBy(2) && img.getWidth() >= MIN_DIMENSION && img.getHeight() >= MIN_DIMENSION) {
 			addFeaturesFor(img, scale);
