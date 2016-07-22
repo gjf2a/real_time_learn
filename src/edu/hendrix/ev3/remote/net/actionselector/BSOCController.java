@@ -2,6 +2,7 @@ package edu.hendrix.ev3.remote.net.actionselector;
 
 import java.util.ArrayList;
 
+import edu.hendrix.ev3.ai.bsoc.BSOCListener;
 import edu.hendrix.ev3.ai.cluster.yuv.AdaptedYUYVImage;
 import edu.hendrix.ev3.ai.cluster.yuv.ImageBSOC;
 import edu.hendrix.ev3.remote.Move;
@@ -11,7 +12,7 @@ import edu.hendrix.ev3.util.FixedSizeArray;
 import edu.hendrix.ev3.util.Logger;
 import edu.hendrix.ev3.util.Util;
 
-public class BSOCController {
+public class BSOCController implements BSOCListener {
 	private ImageBSOC bsoc;
 	private FixedSizeArray<EnumHistogram<Move>> moves;
 	private int clustNum, shrinkNum;
@@ -20,6 +21,7 @@ public class BSOCController {
 		clustNum = size;
 		shrinkNum = shrinkFactor;
 		bsoc = new ImageBSOC(size, shrinkFactor);
+		bsoc.addListener(this);
 		moves = FixedSizeArray.makeImmutableType(size);
 		resetMoves(moves);
 	}
@@ -119,4 +121,13 @@ public class BSOCController {
 	}
 	public int getShrinkNum(){return shrinkNum;}
 	public int getClustNum(){return clustNum;}
+
+	@Override
+	public void addingNode(int node) {}
+
+	@Override
+	public void replacingNode(int target, int replacement) {
+		moves.get(replacement).addAllFrom(moves.get(target));
+		moves.put(target, new EnumHistogram<>(Move.class));
+	}
 }
