@@ -22,7 +22,7 @@ public class BSOCController implements BSOCListener {
 		shrinkNum = shrinkFactor;
 		bsoc = new ImageBSOC(size, shrinkFactor);
 		bsoc.addListener(this);
-		moves = FixedSizeArray.makeImmutableType(size);
+		moves = FixedSizeArray.makeImmutableType(size + 1);
 		resetMoves(moves);
 	}
 	

@@ -168,12 +168,12 @@ public class BoundedSelfOrgCluster<T extends Clusterable<T> & DeepCopyable<T>> i
 	public int train(T example) {
 		int where = nodes.getLowestAvailable();
 		insert(new Node<>(where, example));
+		notifyAdd(where);
 		if (nodes.size() > maxNumNodes()) {
 			where = removeAndMerge();
 		}
-		notifyAdd(where);
 		Util.assertState(nodes.getHighestInUse() == nodes.size() - 1, "Not compact");
-		return where;
+		return getClosestMatchFor(example);
 	}
 	
 	private void insert(Node<T> example) {
