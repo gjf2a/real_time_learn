@@ -40,7 +40,7 @@ public class BSOCController implements BSOCListener {
 	public static BSOCController fromString(String input) {
 		ArrayList<String> parts1 = Util.debrace(input);
 		ImageBSOC bsoc = ImageBSOC.fromString(parts1.get(0));
-		FixedSizeArray<EnumHistogram<Move>> moves = FixedSizeArray.makeImmutableType(bsoc.size());
+		FixedSizeArray<EnumHistogram<Move>> moves = FixedSizeArray.makeImmutableType(bsoc.size()+1);
 		resetMoves(moves);
 		if (parts1.size() > 1) {
 			for (String moveSpec: Util.debrace(parts1.get(1))) {

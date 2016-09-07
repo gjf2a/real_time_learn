@@ -170,8 +170,8 @@ public class ActionSelectorBot extends NetBot {
 		if (updated == Mode.STARTING) {
 			ai = new BSOCController(cmd.getNumClusters(), cmd.getShrinkFactor());
 			aiTimestamp = cmd.getStamp();
-			changeMode(Mode.WAITING);
-			print("c:" + cmd.getNumClusters() + ";s:" + cmd.getShrinkFactor());
+			changeMode(Mode.PULSE);
+			print("c:" + cmd.getNumClusters() + ";s:" + cmd.getShrinkFactor(),3);
 			resetTimer();
 			Logger.EV3Log.format("Starting: clusters: %d, shrink: %d", cmd.getNumClusters(), cmd.getShrinkFactor());
 		} else {
