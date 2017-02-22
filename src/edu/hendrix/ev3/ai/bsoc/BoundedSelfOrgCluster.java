@@ -194,7 +194,10 @@ public class BoundedSelfOrgCluster<T extends Clusterable<T> & DeepCopyable<T>> i
 		Node<T> merged = absorberNode.mergedWith(removedNode);
 		insert(merged);
 		notifyReplace(removedNode.getID(), absorberNode.getID());
-		
+		return placeMergedNode(removedNode, absorberNode);
+	}
+	
+	private int placeMergedNode(Node<T> removedNode, Node<T> absorberNode) {
 		int unused = removedNode.getID();
 		if (unused > nodes.getHighestInUse()) {
 			return absorberNode.getID();
@@ -203,7 +206,7 @@ public class BoundedSelfOrgCluster<T extends Clusterable<T> & DeepCopyable<T>> i
 			tooHighNode.renumber(unused);
 			insert(tooHighNode);
 			return tooHighNode.getID();
-		}
+		}		
 	}
 	
 	private Node<T> removeNode(int target) {

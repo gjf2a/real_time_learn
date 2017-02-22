@@ -22,7 +22,6 @@ public class Logger {
 	public String getFilename() {return logFile.toString();}
 	
 	public static Logger EV3Log = new Logger("/home/lejos/programs/");
-	public static Logger ClientLog = new Logger("/Users/gabriel/");
 	
 	public void markTime() {
 		timestamp = System.currentTimeMillis();
