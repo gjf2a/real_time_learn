@@ -12,7 +12,7 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 
 public class ImgProcDemoController implements Quittable {
-	public static final int NUM_FAST = 100;
+	public static final int NUM_FAST = 1000;
 	
 	@FXML TextField height;
 	@FXML TextField width;
@@ -24,6 +24,7 @@ public class ImgProcDemoController implements Quittable {
 	
 	@FXML CheckBox findFAST;
 	@FXML CheckBox clusterFAST;
+	@FXML CheckBox justFAST;
 	
 	ImageThread renderer;
 	
@@ -32,8 +33,12 @@ public class ImgProcDemoController implements Quittable {
 		renderer = new ImageThread((img, rate) -> {
 			long start = System.currentTimeMillis();
 			ClusterableImage procImg = new ClusterableImage(img);
-			if (findFAST.isSelected() || clusterFAST.isSelected()) {
-				FAST fast = findFAST.isSelected() ? FAST.nFeatures(procImg, NUM_FAST) : FAST.nClusters(procImg, NUM_FAST);
+			if (justFAST.isSelected() || findFAST.isSelected() || clusterFAST.isSelected()) {
+				FAST fast = findFAST.isSelected() 
+						? FAST.nFeatures(procImg, NUM_FAST) 
+								: clusterFAST.isSelected() 
+								? FAST.nClusters(procImg, NUM_FAST)
+										: new FAST(procImg);
 				for (Feature f: fast.allSet()) {
 					procImg.addHighlight(f.X(), f.Y());
 				}

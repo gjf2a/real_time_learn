@@ -33,8 +33,9 @@
          <children>
             <HBox>
                <children>
-                  <CheckBox fx:id="findFAST" mnemonicParsing="false" text="FAST" />
+                  <CheckBox fx:id="findFAST" mnemonicParsing="false" text="FAST Shi-Thomasi" />
                   <CheckBox fx:id="clusterFAST" mnemonicParsing="false" text="ClusterFAST" />
+                  <CheckBox fx:id="justFAST" mnemonicParsing="false" text="Unfiltered FAST" />
                </children>
             </HBox>
             <HBox>
